@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRTC - Gallery</title>
+    <!-- Include Bootstrap and Custom CSS -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="icon">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap -->
+     <!-- Latest Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest Bootstrap JS (optional, for components like modals or tooltips) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+         ::-webkit-scrollbar-button:horizontal:decrement {
+       background-image: url('left-arrow.png'); /* Left button */
+       background-size: contain;
+     }
+     
+     ::-webkit-scrollbar-button:horizontal:increment {
+       background-image: url('right-arrow.png'); /* Right button */
+       background-size: contain;
+     }
+   ::-webkit-scrollbar{
+       width: 0.9rem;
+     }
+     
+     ::-webkit-scrollbar-track{
+       background-color: rgb(255, 255, 255);
+     }
+     
+     ::-webkit-scrollbar-thumb{
+       background-color: rgb(216, 19, 36);
+       background-clip: inherit;
+       height: 0.3rem;
+     }
+     
+     ::-webkit-scrollbar-thumb:hover{
+       background-color:  rgb(231, 40, 56);
+       scroll-behavior: smooth;
+     }
+     
+     /* Horizontal Scrollbar */
+     ::-webkit-scrollbar:horizontal{
+       background: rgb(141, 141, 234);
+       width: 0.5rem;
+       height: 0.4rem;
+       scroll-behavior: smooth;
+     }
+     
+     /* Scrollbar Buttons */
+     ::-webkit-scrollbar-button {
+       background-color: rgb(255, 255, 255); /* Button color */
+       height: 18px; /* Button height */
+       width: 18px; /* Button width */
+     }
+     
+     ::-webkit-scrollbar-button:increment {
+       background-color:rgb(255, 255, 255)/* Button for down/right */
+     }
+     
+     ::-webkit-scrollbar-button:decrement {
+       background-color:rgb(255, 255, 255) /* Button for up/left */
+     }
+     
+     ::-webkit-scrollbar-button:vertical:decrement {
+       background-image: url('./css/up.png'); /* Up button */
+       background-size: contain;
+     }
+     
+     ::-webkit-scrollbar-button:vertical:increment {
+       background-image: url('./css/down.png'); /* Down button */
+       background-size: contain;
+     }
+     
+     ::-webkit-scrollbar-button:horizontal:decrement {
+       background-image: url('path-to-left-arrow.png'); /* Left button */
+       background-size: contain;
+     }
+     
+     ::-webkit-scrollbar-button:horizontal:increment {
+       background-image: url('path-to-right-arrow.png'); /* Right button */
+       background-size: contain;
+     }
+   
+        /* Additional gallery-specific styles */
+        .gallery-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+           
+        }
+        .gallery-items .gallery-item {
+    padding: 10px; /* Adds consistent gap around each gallery item */
+}
+.btn-outline-primary.active {
+    background-color: red;
+    color: white;
+    border-color: red;
+  }
+.gallery-items {
+    margin: -10px; /* Balances the added padding for proper alignment */
+}
+.seven h1 {
+text-align: center;
+    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.seven h1:after,.seven h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #c50000;
+    border-top: 1px solid #c50000;
+    height: 5px;
+  background-color:#f8f8f8;
+}
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-filters {
+            margin-bottom: 30px;
+        }
+
+        .gallery-filters button {
+            margin: 0 5px;
+            border-radius: 20px;
+        }
+
+        .gallery-filters button.active {
+            background-color: #da0202;
+            color: #fff;
+        }
+        .gallery-item-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item-wrapper img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-wrapper:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.category-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10;
+    font-weight: bold;
+}
+h4 {
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center py-2">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="me-2">OFFICIAL IMPORTER AND DISTRIBUTOR OF</span>
+                            <img src="Bridgestone-Karachi-removebg-preview2.png" alt="Bridgestone Logo" style="width: 100px;" class="mx-2">
+                            <span class="ms-2">IN PAKISTAN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="PRTC Logo (EPS)-01-01 (2).jpg" alt="Logo" style="width: 10rem;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse" style="margin-right: 2%; font-size: larger;">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="passengercarradial.html" class="dropdown-item">Passenger Car</a>
+                        <a href="light.html" class="dropdown-item">Light Vehicle Radial <br> (4x4/SUV)</a>
+                        <a href="commercial.html" class="dropdown-item">Light Commercial Vehicle</a>
+                        <a href="tbr.html" class="dropdown-item">Truck And Bus</a>
+                        <a href="industrial.html" class="dropdown-item">Industrial</a>
+                        <a href="off.html" class="dropdown-item modal-title">Off the Road</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="Updated Dealers List11.pdf" class="nav-item nav-link" target="_blank">Dealers List</a>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- Gallery Section -->
+    <div class="seven">
+        <h1 style="margin-top: 30px; font-family: Arial, Helvetica, sans-serif;" >Gallery</h1>
+    
+      
+    <div class="gallery-section">
+      <div class="container">
+          
+          <div class="gallery-filters text-center mb-4">
+              <div class="row justify-content-center">
+                  
+                  <div class="col-auto mb-2">
+                      <button class="btn btn-outline-danger" data-filter=".tyres">Head Office (Karachi)</button>
+                  </div>
+                  <div class="col-auto mb-2">
+                      <button class="btn btn-outline-danger" data-filter=".rubber">Regional Office (Lahore)</button>
+                  </div>
+                  <div class="col-auto mb-2">
+                      <button class="btn btn-outline-danger" data-filter=".accessories">Flagship Outlet (Lahore)</button>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Gallery Grid -->
+          <div class="row gallery-items">
+            <!-- First Row -->
+            <div class="col-lg-4 col-md-6 gallery-item tyres">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/1.jpg" alt="Tyres" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item tyres">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/2.jpg" alt="Rubber" class="w-100">
+  
+                </div>
+            </div>
+           
+        
+          <div class="col-lg-4 col-md-6 gallery-item tyres">
+              <div class="position-relative gallery-item-wrapper">
+                  <img src="img/faisal town imgs/11.jpg" alt="Accessories" class="w-100">
+  
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-item tyres">
+            <div class="position-relative gallery-item-wrapper">
+                <img src="img/faisal town imgs/3.jpg" alt="Accessories" class="w-100">
+
+            </div>
+            </div>
+            <!-- Second Row -->
+            <div class="col-lg-4 col-md-6 gallery-item tyres">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/4.jpg" alt="Tyres" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item tyres">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/5.jpg" alt="Rubber" class="w-100" style="object-fit: cover;">
+  
+                </div>
+            </div>
+                
+            <div class="col-lg-4 col-md-6 gallery-item tyres">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/9.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item tyres">
+              <div class="position-relative gallery-item-wrapper">
+                  <img src="img/faisal town imgs/10.jpg" alt="Accessories" class="w-100">
+  
+              </div>
+          </div>
+            <div class="col-lg-4 col-md-6 gallery-item tyres">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/6.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item tyres">
+              <div class="position-relative gallery-item-wrapper">
+                  <img src="img/faisal town imgs/7.jpg" alt="Accessories" class="w-100">
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 gallery-item tyres">
+              <div class="position-relative gallery-item-wrapper">
+                  <img src="img/faisal town imgs/8.jpg" alt="Accessories" class="w-100">
+
+              </div>
+          </div>
+          
+        <div class="col-lg-4 col-md-6 gallery-item tyres">
+            <div class="position-relative gallery-item-wrapper">
+                <img src="img/faisal town imgs/12.jpg" alt="Accessories" class="w-100">
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 gallery-item tyres">
+            <div class="position-relative gallery-item-wrapper">
+                <img src="img/faisal town imgs/13.jpg" alt="Accessories" class="w-100">
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 gallery-item tyres">
+            <div class="position-relative gallery-item-wrapper">
+                <img src="img/faisal town imgs/14.jpg" alt="Accessories" class="w-100">
+
+            </div>
+        </div>
+
+
+          <div class="row gallery-items">
+              <!-- First Row -->
+              <div class="col-lg-4 col-md-6 gallery-item accessories">
+                  <div class="position-relative gallery-item-wrapper">
+                      <img src="img/faisal town imgs/main.jpeg" alt="Tyres" class="w-100">
+    
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 gallery-item accessories">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/f8.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item accessories">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/f9.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+              <div class="col-lg-4 col-md-6 gallery-item accessories">
+                  <div class="position-relative gallery-item-wrapper">
+                      <img src="img/faisal town imgs/IMG_5988.JPG" alt="Rubber" class="w-100">
+    
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 gallery-item accessories">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/f6.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item accessories">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/f7.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item accessories">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/f2.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item accessories">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/f4.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item accessories">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/f5.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item accessories">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/f1.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item accessories">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/f3.jpg" alt="Accessories" class="w-100">
+  
+                </div>
+            </div>
+              <div class="col-lg-4 col-md-6 gallery-item accessories">
+                  <div class="position-relative gallery-item-wrapper">
+                      <img src="img/faisal town imgs/IMG_5993.JPG" alt="Accessories" class="w-100">
+    
+                  </div>
+              </div>
+  
+              <!-- Second Row -->
+            
+            
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item rubber">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/reg1.jpeg" alt="Accessories" class="w-100">
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item rubber">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/reg2 (2).jpeg" alt="Accessories" class="w-100">
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item rubber">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/reg1 (2).jpeg" alt="Accessories" class="w-100">
+
+                </div>
+                </div>
+            <div class="col-lg-4 col-md-6 gallery-item rubber" style="margin-bottom: 180px;">
+                <div class="position-relative gallery-item-wrapper">
+                    <img src="img/faisal town imgs/reg3 (2).jpeg" alt="Accessories" class="w-100">
+
+                </div>
+            </div>
+         
+           
+          
+            
+          </div>
+      </div>
+  </div>
+  </div>
+    <!-- Bootstrap and Script -->
+   
+  
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-1 mt-5 no-padding wow fadeIn" data-wow-delay="0.1s"> <!-- Added no-padding -->
+        <div class="container py-5 no-padding"> <!-- Added no-padding -->
+            <div class="col-12 text-center">
+                <img src="img/PRTC.png" alt="logo" style="width: 25rem; margin-top: -90px;">
+            </div>
+            <div class="row g-5">
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Head Office</h4>
+                        <div class="d-flex flex-column" style="font-size: medium;">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>79-C, PHASE II EXTENSION DHA,
+                            KARACHI - 75500</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92-21-35804646 TO 51</p>
+                            <p class="mb-2"><i class="fa fa-fax me-2"></i> +92 (21) 35803131 </p>
+                            <p class="mb-2" style="white-space: nowrap;"><i class="fa fa-envelope me-3"></i>sales@bridgestone.net.pk</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Regional Office</h4>
+                        <div class="d-flex flex-column" style="font-size: medium;">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>SHC Building, 1/13, 
+                            Crust Road, Chowk JainMandir, Lahore - 54000</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92 (42) 37173401-2, 37173414</p>
+                            <p class="mb-2" style="white-space: nowrap;"><i class="fa fa-envelope me-3"></i>info@autoexpress.com.pk</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" >
+                        <h4 class="text-light mb-4">Flagship Outlet</h4>
+                        <div class="d-flex flex-column" style="font-size: medium;">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>6C, Block C, Abul Hassan Isfahani Road, 
+                            Faisal Town, Lahore - 54770</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92 (42) 38377777</p>
+                            <p class="mb-2" style="white-space: nowrap;"><i class="fa fa-envelope me-3"></i>ft-sales@autoexpress.com.pk</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Corporate Office</h4>
+                        <div class="d-flex flex-column" style="font-size: medium;">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>1-12, 163/1, Majeed Plaza, Bank Rd, Saddar, Rawalpindi - 46000</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92 (51) 5700297</p>
+                            <p class="mb-2" style="white-space: nowrap;"><i class="fa fa-envelope me-3"></i>info.isb@bridgestone.net.pk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex pt-3 justify-content-center;">
+                <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container no-padding"> <!-- Added no-padding -->
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Pakistan Rubber & Tyre Company</a>, All Right Reserved. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+    
+  $(document).ready(function () {
+      // Filter gallery items
+      $('.gallery-filters button').click(function () {
+          const filter = $(this).data('filter');
+          $('.gallery-filters button').removeClass('active'); // Remove active class from all buttons
+          $(this).addClass('active'); // Add active class to the clicked button
+          
+          if (filter === '*') {
+              $('.gallery-item').show();
+          } else {
+              $('.gallery-item').hide();
+              $(filter).show();
+          }
+      });
+
+      // Open modal on image click
+      $('.gallery-item img').click(function () {
+          const src = $(this).attr('src'); // Get the clicked image's src
+          $('#modalImage').attr('src', src); // Set modal image src
+          $('#galleryModal').modal('show'); // Show the modal
+      });
+  });
+
+
+  </script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+   
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+  
+   
+
+</body>
+
+</html>

@@ -1,0 +1,922 @@
+/********** Template CSS **********/
+:root {
+    --primary: #D81324;
+    --secondary: #0B2154;
+    --light: #F2F2F2;
+    --dark: #111111;
+}
+
+
+  /* Custom style for carousel control prev and next icons */
+ 
+
+
+
+  /* Carousel Image Styling */
+.carousel-item img {
+    object-fit: cover; /* Maintain aspect ratio and fill space */
+    height: 500px; /* Adjust height for the images */
+    filter: brightness(1); /* Ensure the image is fully bright */
+  width:5000px;
+  }
+  
+  /* Caption Styling */
+  .carousel-caption {
+    position: absolute;
+    bottom: 20%; /* Position text vertically */
+    left: 10%; /* Position text horizontally */
+    text-align: left; /* Align text */
+    padding: 10px 20px;
+    background: none; /* Remove full dark background */
+  }
+  
+  .carousel-caption h3 {
+    font-size: 2rem; /* Large heading */
+    font-weight: bold;
+    color: #fff; /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Light shadow for clarity */
+  }
+  
+  /* Ensure Image Focus - Remove Any Dimming */
+  .carousel-item img {
+    filter: none !important;
+    opacity: 1 !important;
+  }
+  
+  /* Responsive Adjustments */
+/* General styles for the container and image */
+
+
+.container .text-center img {
+    width: 25rem; /* Default width */
+    margin-top: -90px; /* Default margin */
+}
+
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 576px) {
+    .container .text-center img {
+        width: 15rem; /* Smaller width for mobile */
+        margin-top: -50px; /* Reduce negative margin */
+        float: left;
+        margin-left: -50px
+    }
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .container .text-center img {
+        width: 20rem; /* Adjust width for tablets */
+        margin-top: -70px; /* Adjust negative margin */
+        float: left;
+        margin-left: -50px
+    }
+}
+
+/* Media query for large screens (e.g., laptops) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container .text-center img {
+        width: 23rem; /* Slightly smaller width for laptops */
+        margin-top: -80px; /* Adjust negative margin */
+     
+    }
+}
+
+/* Media query for extra-large screens (e.g., LCD monitors) */
+@media (min-width: 1201px) {
+    .container .text-center img {
+        width: 30rem; /* Larger width for big screens */
+        margin-top: -100px; /* Increase negative margin */
+      
+    }
+}
+
+  
+  @media (min-width: 1200px) {
+    #carouselProfessional {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+
+
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+.modal-lg {
+    max-width: 80%; /* Set this to fit within the screen width */
+}
+
+.modal-body img {
+    max-width: 100%; /* Make sure the image fills the modal width */
+    height: auto;    /* Keep the image ratio intact */
+    display: block;
+    margin: auto;    /* Center the image */
+}
+
+/* Optional: Ensure the modal content is properly centered */
+.modal-content {
+    max-width: 600px; /* Adjust width to match the image width */
+    max-height: 600px; /* Adjust height to match the image height */
+    margin: auto;
+}
+
+.card {
+    height: auto;
+  }
+  .card-body {
+    padding: 0;
+  }
+  .ratio {
+    width: 100%;
+    height: auto;
+  }
+  .ratio iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .custom-ratio {
+    padding-bottom: 56.25%; /* Default 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Reduce height by 25% */
+  .custom-ratio-smaller {
+    padding-bottom: 42.19%; /* 25% less height than 16:9 */
+  }
+
+  .custom-ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* carousel bg img */
+
+  .custom-background-img {
+    width: 40%; /* Adjust this percentage to your needs */
+    max-width: 445px; /* Optional: Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+
+/*** Navbar ***/
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+    height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+.custom-background-img{
+    width: 23%;
+}
+
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+/* For extra small screens (phones, <576px) */
+@media (max-width: 576px) {
+    .card-img-top {
+      height: auto !important;
+      object-fit: contain !important;
+    }
+  
+    .card-body {
+      padding: 8px;
+    }
+  
+    .card {
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* For small screens (tablets, >=576px and <768px) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .card-img-top {
+      height: 200px !important;
+      object-fit: cover !important;
+    }
+  
+    .card-body {
+      padding: 10px;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* For medium screens (desktop, >=768px and <992px) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    .card-img-top {
+      height: 225px !important;
+      object-fit: cover !important;
+    }
+  
+    .card-body {
+      padding: 12px;
+    }
+  
+    .card {
+      margin-bottom: 25px;
+    }
+  }
+  
+  /* For large screens (desktops, >=992px and <1200px) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .card-img-top {
+      height: 250px !important;
+      object-fit: cover !important;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }
+  
+    .card {
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* For extra-large screens (large desktops, >=1200px) */
+ .crd{
+    overflow: hidden !important; 
+ }
+  .modal-title{
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    #carouselProfessional {
+      margin: 0 auto;
+      height: auto;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 180px; /* Set a consistent height */
+      object-fit:cover; /* Ensures images maintain proportions and fill the space */
+      
+    }
+   
+
+  @media (min-width: 769px) {
+    .carousel-item img {
+      width: 100%;
+      height: 200px; /* Set a consistent height for larger screens */
+      object-fit: cover;
+    }
+    
+
+
+    
+    
+    
+
+/* General responsiveness for images */
+.imgdec, 
+.container-fluid img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for devices with width up to 768px */
+@media (max-width: 768px) {
+    .imgdec {
+        max-width: 70%; /* Scale down the logo */
+    }
+    .container-fluid img {
+        max-width: 80%; /* Adjust other images */
+    }
+  
+}
+@media (max-width: 576px) {
+    .custom-background-img {
+        width: 80%; /* Adjust width for very small screens */
+    }
+}
+
+/* Medium devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .custom-background-img {
+        width: 70%; /* Slightly larger width for medium screens */
+    }
+}
+
+/* Large devices (max-width: 992px) */
+@media (max-width: 992px) {
+    .custom-background-img {
+        width: 50%; /* Moderate width for large screens */
+    }
+}
+
+/* Extra large devices (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .custom-background-img {
+        width: 30%; /* Original size for very large screens */
+    }
+}
+/* Media query for devices with width up to 480px */
+@media (max-width: 480px) {
+    .imgdec {
+        max-width: 60%; /* Further scale down for smaller devices */
+    }
+    .container-fluid img {
+        max-width: 75%;
+    }
+   
+}
+
+/* Media query for iPhone SE (max-width: 375px) */
+@media (max-width: 375px) {
+    .imgdec {
+        max-width: 50%; /* Optimize for smaller screens */
+    }
+    .container-fluid img {
+        max-width: 70%;
+    }
+}
+
+
+.page-header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header-inner {
+    background: rgba(0, 0, 0, .7);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--light);
+}
+
+
+/*** Facts ***/
+.fact {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*** Service ***/
+.service .nav .nav-link {
+    background: var(--light);
+    transition: .5s;
+}
+
+.service .nav .nav-link.active {
+    background: var(--primary);
+}
+
+.service .nav .nav-link.active h4 {
+    color: #FFFFFF !important;
+}
+
+
+/*** Booking ***/
+.booking {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.bootstrap-datetimepicker-widget.bottom {
+    top: auto !important;
+}
+
+.bootstrap-datetimepicker-widget .table * {
+    border-bottom-width: 0px;
+}
+
+.bootstrap-datetimepicker-widget .table th {
+    font-weight: 500;
+}
+/* Scrollbar Styles */
+::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url('left-arrow.png'); /* Left button */
+    background-size: contain;
+  }
+  
+  ::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url('right-arrow.png'); /* Right button */
+    background-size: contain;
+  }
+::-webkit-scrollbar{
+    width: 0.9rem;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: rgb(216, 19, 36);
+    background-clip: inherit;
+    height: 0.3rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background-color:  rgb(231, 40, 56);
+    scroll-behavior: smooth;
+  }
+  
+  /* Horizontal Scrollbar */
+  ::-webkit-scrollbar:horizontal{
+    background: rgb(141, 141, 234);
+    width: 0.5rem;
+    height: 0.4rem;
+    scroll-behavior: smooth;
+  }
+  
+  /* Scrollbar Buttons */
+  ::-webkit-scrollbar-button {
+    background-color: rgb(255, 255, 255); /* Button color */
+    height: 18px; /* Button height */
+    width: 18px; /* Button width */
+  }
+  
+  ::-webkit-scrollbar-button:increment {
+    background-color:rgb(255, 255, 255)/* Button for down/right */
+  }
+  
+  ::-webkit-scrollbar-button:decrement {
+    background-color:rgb(255, 255, 255) /* Button for up/left */
+  }
+  
+  ::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url('up.png'); /* Up button */
+    background-size: contain;
+  }
+  
+  ::-webkit-scrollbar-button:vertical:increment {
+    background-image: url('down.png'); /* Down button */
+    background-size: contain;
+  }
+  
+  ::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url('path-to-left-arrow.png'); /* Left button */
+    background-size: contain;
+  }
+  
+  ::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url('path-to-right-arrow.png'); /* Right button */
+    background-size: contain;
+  }
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+    background: var(--primary);
+}
+
+.bootstrap-datetimepicker-widget table td.today::before {
+    border-bottom-color: var(--primary);
+}
+
+
+/*** Team ***/
+.team-item .team-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    transform: scale(0);
+    transition: .5s;
+}
+
+.team-item:hover .team-overlay {
+    transform: scale(1);
+}
+
+.team-item .team-overlay .btn {
+    color: var(--primary);
+    background: #FFFFFF;
+}
+
+.team-item .team-overlay .btn:hover {
+    color: #FFFFFF;
+    background: var(--secondary)
+}
+
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-item .testimonial-text,
+.testimonial-carousel .owl-item.center .testimonial-text * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+    background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/* Include all vendor prefixes and the standard property */
+
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #CCCCCC;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+
+/*** Footer ***/
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/carousel-bg-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.seven h1 {
+    text-align: center;
+        font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+        text-transform: uppercase;
+    
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 27px 0;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    
+    .seven h1:after,.seven h1:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #c50000;
+        border-top: 1px solid #c50000;
+        height: 5px;
+      background-color:#f8f8f8;
+    }
+.foot{
+    float: right; margin-top: -32%;width: 32%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif
+}
+
+
+.containerr .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 60px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.containerr .card:hover
+{
+    height: 450px;
+}
+.containerr .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.containerr .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.containerr .card .content
+{
+    position: relative;
+    margin-top: -100px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.containerr .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
+}
+@media (max-width: 768px) {
+    /* Adjust navbar padding */
+    .navbar-nav {
+        padding: 10px 0;
+    }
+
+    /* Ensure logos scale */
+    .navbar-brand img {
+        max-width: 100%;
+    }
+
+    /* Center-align text */
+    .text-center {
+        text-align: center !important;
+    }
+
+    /* Fix modal image sizing */
+    .modal img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust card padding */
+    .card-body {
+        padding: 1rem;
+    }
+}
+}
+.animated-toggler {
+    border: none;
+    background: none;
+    position: fixed; /* Fix position on screen */
+    top: 15px; /* Adjust distance from the top */
+    right: 20px; /* Adjust distance from the right */
+    z-index: 1000; /* Ensure it stays above other elements */
+    width: 30px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.animated-toggler .toggler-bar {
+    width: 100%;
+    height: 3px;
+    background-color: #000; /* Black color */
+    border-radius: 1.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.animated-toggler.collapsed .toggler-bar:nth-child(1) {
+    transform: rotate(45deg) translateY(9px);
+}
+
+.animated-toggler.collapsed .toggler-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.animated-toggler.collapsed .toggler-bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-9px);
+}
+
+.animated-toggler:hover .toggler-bar {
+    background-color: #ff0000; /* Change to red on hover */
+}
+
+}

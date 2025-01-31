@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PRTC - Home | PRTC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="PRTC, public transport, reliable transport, travel, bus services">
+    <meta name="description" content="Welcome to PRTC, your reliable partner in public transportation. Explore our services and routes for a seamless travel experience.">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+    body{
+margin: 0;
+padding: 0;
+    }   
+    :-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url('left-arrow.png'); /* Left button */
+    background-size: contain;
+  }
+  
+  ::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url('right-arrow.png'); /* Right button */
+    background-size: contain;
+  }
+::-webkit-scrollbar{
+    width: 0.9rem;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: rgb(216, 19, 36);
+    background-clip: inherit;
+    height: 0.3rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background-color:  rgb(231, 40, 56);
+    scroll-behavior: smooth;
+  }
+  
+  /* Horizontal Scrollbar */
+  ::-webkit-scrollbar:horizontal{
+    background: rgb(141, 141, 234);
+    width: 0.5rem;
+    height: 0.4rem;
+    scroll-behavior: smooth;
+  }
+  
+  /* Scrollbar Buttons */
+  ::-webkit-scrollbar-button {
+    background-color: rgb(255, 255, 255); /* Button color */
+    height: 18px; /* Button height */
+    width: 18px; /* Button width */
+  }
+  
+  ::-webkit-scrollbar-button:increment {
+    background-color:rgb(255, 255, 255)/* Button for down/right */
+  }
+  
+  ::-webkit-scrollbar-button:decrement {
+    background-color:rgb(255, 255, 255) /* Button for up/left */
+  }
+  
+  ::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url('./css/up.png'); /* Up button */
+    background-size: contain;
+  }
+  
+  ::-webkit-scrollbar-button:vertical:increment {
+    background-image: url('./css/down.png'); /* Down button */
+    background-size: contain;
+  }
+  
+  ::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url('path-to-left-arrow.png'); /* Left button */
+    background-size: contain;
+  }
+  
+  ::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url('path-to-right-arrow.png'); /* Right button */
+    background-size: contain;
+  }
+
+
+    body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Smooth expand effect */
+  }
+
+  .details {
+    display: none;
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  .card:hover .details {
+    max-height: 200px; /* Adjust based on content height */
+  }
+
+  .container {
+    max-width: 1200px; /* Optional for fixed max-width */
+  }
+
+  .card-img-top {
+    border-radius: 0.25rem; /* Optional rounded corners for a professional look */
+  }
+  h4 {
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+      </style>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center py-2">
+                        <!-- Align the items in a single row with flexbox -->
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="me-2">OFFICIAL IMPORTER AND DISTRIBUTOR OF</span>
+                            <img src="Bridgestone-Karachi-removebg-preview2.png" 
+                                 alt="Bridgestone Logo" 
+                                 style="width: 100px;" 
+                                 class="mx-2">
+                            <span class="ms-2">IN PAKISTAN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <!-- Limit the image height to ensure it doesn't push the navbar height -->
+            <img class="imgdec" src="PRTC Logo (EPS)-01-01 (2).jpg" alt="Logo" style="width: 10rem;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="passengercarradial.html" class="dropdown-item">Passenger Car </a>
+                        <a href="light.html" class="dropdown-item">Light Vehicle <br> (4x4/SUV)</a>
+                        <a href="commercial.html" class="dropdown-item">Light Commercial Vehicle</a>
+                        <a href="tbr.html" class="dropdown-item">Truck And Bus</a>
+                        <a href="industrial.html" class="dropdown-item">Industrial</a>
+                        <a href="off.html" class="dropdown-item modal-title">Off the Road</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="Updated Dealers List11.pdf" class="nav-item nav-link" target="_blank">Dealers List</a>
+
+            </div>
+        </div>
+        
+    </nav>
+   
+    
+    <!-- Topbar Start -->
+    
+    <!-- Topbar End -->
+    
+    
+    <!-- Navbar Start -->
+    
+    <!-- Navbar End -->
+    
+    
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 my-2">
+      <div id="carouselProfessional" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <!-- Slides -->
+          <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                  <img src="img/1.jpeg" class="d-block w-100" alt="Slide 1">
+              </div>
+  
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                  <img src="img/2.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+  
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                  <img src="img/3-01.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+  
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                  <img src="img/6.jpg" class="d-block w-100" alt="Slide 4">
+              </div>
+  
+              <!-- Slide 5 -->
+              <div class="carousel-item">
+                  <img src="img/5067.jpg" class="d-block w-100" alt="Slide 5">
+              </div>
+          </div>
+  
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProfessional" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProfessional" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+  
+  
+      
+      
+      
+
+    <!-- Add Google Font -->
+    
+ 
+
+    <div class="container py-4">
+        <!-- Heading for Cars -->
+        <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px;">Patterns for Car</h4>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <a href="passengercarradial.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/POTENZA (1).jpeg" class="card-img-top" alt="Potenza"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                POTENZA
+                            </h5>
+                            <p class="card-text" style="text-align: left;">Supports the efforts of drivers who are aiming for the top in the motorsports world and pursuing the upper limits of speed allowed by its technology.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="col">
+                <a href="passengercarradial.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/ts.png" class="card-img-top" alt="Techno Sports"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                TECHNO SPORTS
+                            </h5>
+                            <p class="card-text" style="text-align: left;">Stand out from the crowd with stylish lightning grooves and eye-catching tread patterns while driving, and feel in control of your car on the road.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="col">
+                <a href="passengercarradial.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/turanza.jpeg" class="card-img-top" alt="Turanza"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                TURANZA
+                            </h5>
+                            <p class="card-text" style="text-align: left;">Aims to achieve the high-level balance that luxury car owners seek, combining comfort, security, driving performance, and advanced technology.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="col">
+                <a href="passengercarradial.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/ECOPIA (1).jpg" class="card-img-top" alt="Ecopia"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                ECOPIA
+                            </h5>
+                            <p class="card-text" style="text-align: left;">Provides eco-friendly performance through higher fuel efficiency and safety. It allows for reduced rolling resistance, which in turn enhances fuel efficiency.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container py-4">
+        <!-- Heading for Cars -->
+        <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px;">Patterns for SUV</h4>
+    
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <a href="light.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/ALENZA (1).jpg" class="card-img-top" alt="Alenza"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                ALENZA
+                            </h5>
+                            <p class="card-text">Specially designed for SUVs to maximize performance on both dry and slippery roads, providing confidence and comfort when moving in urban areas.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="col">
+                <a href="light.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/DUELER (1).jpeg" class="card-img-top" alt="Dueler"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                DUELER
+                            </h5>
+                            <p class="card-text" style="text-align: left;">Combines high-level traction and toughness that full-fledged 4WD vehicles require. It provides superior driving performance, comfort, and reliability.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="col">
+                <a href="light.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/ecop-01-01.jpg" class="card-img-top" alt="Ecopia"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                ECOPIA
+                            </h5>
+                            <p class="card-text" style="text-align: left;">Ecopia line offers fuel-efficient tires tailored for SUVs, providing a balance of performance, comfort, and environmental benefits.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container py-4">
+        <!-- Heading for Light Commercial -->
+        <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px;">Patterns for Light Commercial</h4>
+    
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <a href="commercial.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/duravis homepage.jpg" class="card-img-top" alt="Duravis"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                DURAVIS
+                            </h5>
+                            <p class="card-text" style="text-align: left;">Duravis tire brand is designed for light commercial vehicles. Heavy-duty, tough, and tested against extreme elements, Duravis is a tire designed for grueling commercial use.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="col">
+                <a href="commercial.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/LEO 677 (1)-01.jpg" class="card-img-top" alt="LEO"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                LEO
+                            </h5>
+                            <p class="card-text" style="text-align: left;">LEO 677 is a commercial tire designed for vehicles such as vans and pick-ups. It features a wide tread design that provides long tread life, excellent loading capacity, superior handling, and a smooth ride.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="col">
+                <a href="commercial.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/r623.jpeg" class="card-img-top" alt="R623"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                R623
+                            </h5>
+                            <p class="card-text" style="text-align: left;">R623 is a premium tire designed specifically for light commercial vehicles and vans, offering dependable performance, comfort, and safety. The compound gives enhanced control in the wet.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+    
+
+            <div class="col">
+                <a href="commercial.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/R265FF-01.jpg" class="card-img-top" alt="R265"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                R265
+                            </h5>
+                            <p class="card-text" style="text-align: left;">R265 is an all-position steel-belted radial rib tire designed for commercial light trucks and vans. Its ribbed tread pattern enhances fuel efficiency and reduces road noise, providing a quieter ride.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <!-- Heading for Truck & Bus -->
+        <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px;">Patterns for Truck & Bus</h4>
+    
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <a href="tbr.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/r187 final-01-01-01.jpg" class="card-img-top" alt="R187"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                R187 / R187 (SUPER)
+                            </h5>
+                            <p class="card-text" style="text-align: left;">V-Steel Rib Super R187 is a commercial-grade tire designed for light and medium trucks, offering enhanced durability, traction, and comfort for highway applications.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="col">
+                <a href="tbr.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/ECOPIA final.jpg" class="card-img-top" alt="Ecopia"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                ECOPIA
+                            </h5>
+                            <p class="card-text" style="text-align: left;">ECOPIA tyres return more energy back to the tyre instead of generating heat and compromising fuel efficiency. Ecopia tyres help channel water away from the tyre through circumferential grooves.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="col">
+                <a href="tbr.html" style="text-decoration: none; color: inherit;">
+                    <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                        <img src="img/g610-01-01-01.jpg" class="card-img-top" alt="G610"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="height: 250px; display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                G610
+                            </h5>
+                            <p class="card-text" style="text-align: left;">G610 is a commercial truck tire designed for durability and performance in various applications. It is suitable for all positions on trucks, making it a versatile choice for various commercial needs.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+           
+                    <div class="col">
+                        <a href="tbr.html" style="text-decoration: none; color: inherit;">
+                        <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                            <img src="img/R294FF-01.jpg" class="card-img-top" alt="R294"  
+                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                            <div class="card-body d-flex flex-column align-items-center text-center" 
+                                 style="height: 250px; display: flex; justify-content: flex-start;">
+                                <h5 class="card-title" 
+                                    style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                    R294
+                                </h5>
+                                <p class="card-text"  style="text-align: left;">R294 is a highway terrain, all-season tire designed for commercial vehicles, specifically for the steer axle. Its five-rib pattern ensures even load distribution across any axle position, enhancing stability and handling.</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+            
+                    <div class="col">
+                        <a href="tbr.html" style="text-decoration: none; color: inherit;">
+                            <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                                <img src="img/Untitled-1-01.jpg" class="card-img-top" alt="M857"  
+                                     style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                                <div class="card-body d-flex flex-column align-items-center text-center" 
+                                     style="height: 250px; display: flex; justify-content: flex-start;">
+                                    <h5 class="card-title" 
+                                        style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                        M857
+                                    </h5>
+                                    <p class="card-text"  style="text-align: left;">M857 is an all-position radial tire engineered for on- and off-highway applications, particularly suited for vehicles such as dump trucks, logging rigs, and refuse transporters.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+          
+                    <div class="col">
+                        <a href="tbr.html" style="text-decoration: none; color: inherit;">
+                            <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                                <img src="img/VSJ (JPEG)-01-01-01.jpg" class="card-img-top" alt="VSJ"  
+                                     style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                                <div class="card-body d-flex flex-column align-items-center text-center" 
+                                     style="height: 250px; display: flex; justify-content: flex-start;">
+                                    <h5 class="card-title" 
+                                        style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                        VSJ
+                                    </h5>
+                                    <p class="card-text" style="text-align: left;">V-Steel Jamal (VSJ) is a radial tire engineered for military and rescue vehicles operating on desert terrain, sand, and paved roads.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container py-4">
+                <!-- Heading for Cars -->
+                <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px;">Industrial</h4>
+            
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <a href="industrial.html" style="text-decoration: none; color: inherit;">
+                            <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                                <img src="img/j23-01-01.jpg" class="card-img-top" alt="J-Lug"  
+                                     style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                                <div class="card-body d-flex flex-column align-items-center text-center" 
+                                     style="height: 250px; display: flex; justify-content: flex-start;">
+                                    <h5 class="card-title" 
+                                        style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                        U-LUG
+                                    </h5>
+                                    <p class="card-text" style="text-align: left;">U-Lug is a durable pneumatic tyre engineered for industrial vehicles such as forklifts, trucks, and shovel loaders, its design ensures reliable performance across various surfaces./p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="industrial.html" style="text-decoration: none; color: inherit;">
+                            <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                                <img src="img/J123-01.jpg" class="card-img-top" alt="J-Lug"  
+                                     style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                                <div class="card-body d-flex flex-column align-items-center text-center" 
+                                     style="height: 250px; display: flex; justify-content: flex-start;">
+                                    <h5 class="card-title" 
+                                        style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                     J-LUG
+                                    </h5>
+                                    <p class="card-text" style="text-align: left;">J-Lug is a highly puncture-resistant pneumatic tyre designed for industrial applications, its robust construction enhances durability and minimizes downtime in demanding work environments.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="industrial.html" style="text-decoration: none; color: inherit;">
+                            <div class="card h-auto overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                                <img src="img/WhatsApp Image 2025-01-31 at 11.45.32 AM (1).jpg" class="card-img-top" alt="J-Lug"  
+                                     style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                                <div class="card-body d-flex flex-column align-items-center text-center" 
+                                     style="height: 250px; display: flex; justify-content: flex-start;">
+                                    <h5 class="card-title" 
+                                        style="margin-bottom: 10px; height: 40px; font-family: 'Poppins', sans-serif; font-weight: 600; display: flex; align-items: center;">
+                                        PLO 1 SOLID
+                                    </h5>
+                                    <p class="card-text" style="text-align: left;" >The PL01 is entirely composed of a rubber compound, eliminating the need for air inflation and ensuring consistent performance without the risk of punctures.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                    </div>
+    <!-- Heading for Light Commercial -->
+  
+
+</body>
+
+ 
+    
+
+
+    
+    
+    
+    
+
+    
+
+    
+    
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-1 mt-5 no-padding wow fadeIn" data-wow-delay="0.1s"> <!-- Added no-padding -->
+        <div class="container py-5 no-padding"> <!-- Added no-padding -->
+            <div class="col-12 text-center">
+                <img src="img/PRTC.png" alt="logo" style="width: 25rem; margin-top: -90px;">
+            </div>
+            <div class="row g-5">
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Head Office</h4>
+                        <div class="d-flex flex-column" style="font-size: medium;">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>79-C, PHASE II EXTENSION DHA,
+                            KARACHI - 75500</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92-21-35804646 TO 51</p>
+                            <p class="mb-2"><i class="fa fa-fax me-2"></i> +92 (21) 35803131 </p>
+                            <p class="mb-2" style="white-space: nowrap;"><i class="fa fa-envelope me-3"></i>sales@bridgestone.net.pk</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Regional Office</h4>
+                        <div class="d-flex flex-column" style="font-size: medium;">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>SHC Building, 1/13, 
+                            Crust Road, Chowk JainMandir, Lahore - 54000</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92 (42) 37173401-2, 37173414</p>
+                            <p class="mb-2" style="white-space: nowrap;"><i class="fa fa-envelope me-3"></i>info@autoexpress.com.pk</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" >
+                        <h4 class="text-light mb-4">Flagship Outlet</h4>
+                        <div class="d-flex flex-column" style="font-size: medium;">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>6C, Block C, Abul Hassan Isfahani Road, 
+                            Faisal Town, Lahore - 54770</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92 (42) 38377777</p>
+                            <p class="mb-2" style="white-space: nowrap;"><i class="fa fa-envelope me-3"></i>ft-sales@autoexpress.com.pk</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Corporate Office</h4>
+                        <div class="d-flex flex-column" style="font-size: medium;">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>1-12, 163/1, Majeed Plaza, Bank Rd, Saddar, Rawalpindi - 46000</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92 (51) 5700297</p>
+                            <p class="mb-2" style="white-space: nowrap;"><i class="fa fa-envelope me-3"></i>info.isb@bridgestone.net.pk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex pt-3 justify-content-center;">
+                <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container no-padding"> <!-- Added no-padding -->
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Pakistan Rubber & Tyre Company</a>, All Right Reserved. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+  
+  
+    <!-- Footer End -->
+    <!-- Footer End -->
+  
+
+    <!-- Back to Top -->
+    
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+   
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+   
+   
+</body>
+
+</html>
