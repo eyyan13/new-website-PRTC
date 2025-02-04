@@ -1,0 +1,429 @@
+[
+    {
+        "name": "Crown Tyre",
+        "city": "Karachi",
+        "address": "Shop No. 2, Assennad Khatori Building, Opp. Bahadur Shah Market, Karachi",
+        "contactPerson": "Salman Ahmed / Afzal",
+        "telephone": "021-32727847",
+        "mobile": "0321-9235237, 0322-2642195"
+    },
+    {
+        "name": "Ali Tyre",
+        "city": "Karachi",
+        "address": "Shop No. 113, Bahadur Shah Market, Karachi",
+        "contactPerson": "Abdul Subhan / Essa Subhan",
+        "telephone": "021-2633578",
+        "mobile": "0312-2933578, 0315-8561151"
+    },
+    {
+        "name": "Munir Automobile",
+        "city": "Karachi",
+        "address": "Ground Floor, 2-Assennad Khatori Building, Opp. Bahadur Shah Market, Karachi",
+        "contactPerson": "Aamir Sohail",
+        "telephone": "021-32725806",
+        "mobile": "0333-3182311"
+    },
+    {
+        "name": "A. A. Tyre Corporation",
+        "city": "Karachi",
+        "address": "Shop No. 1, Corner Castle Building, Opp. Bahadurshah Zafar Market, Karachi",
+        "contactPerson": "Aslam / Fahad / Owais",
+        "telephone": "021-32729906",
+        "mobile": "0333-2658424, 0324-2056524"
+    },
+    {
+        "name": "Shiraz Tyre",
+        "city": "Karachi",
+        "address": "Bahadur Shah Market, Karachi",
+        "contactPerson": "Mr. Shiraz",
+        "telephone": "021-32211124",
+        "mobile": "0300-2136326"
+    },
+    {
+        "name": "Suriya Motors",
+        "city": "Karachi",
+        "address": "A-48/1 Society Office Signal, Shahrah-e-Quaideen, Karachi",
+        "contactPerson": "Khurram Suriya / Abu Bakar",
+        "telephone": "021-32790897-9",
+        "mobile": "0300-2136205, 0333-3022966"
+    },
+    {
+        "name": "Tyre N Tyres",
+        "city": "Karachi",
+        "address": "Shop No. 06, Furqania Complex, New M.A. Jinnah Road, Karachi",
+        "contactPerson": "Mr. Ali / Haris Subhan",
+        "telephone": "021-34932684",
+        "mobile": "0333-2423341, 0332-2033221"
+    },
+    {
+        "name": "Zafcom Trading",
+        "city": "Karachi",
+        "address": "Defence Garden, Opposite National Medical Hospital, D.H.A. Phase 1, Karachi",
+        "contactPerson": "Mr. Faisal / Mr. Danish",
+        "telephone": "021-35386383",
+        "mobile": "0300-8235830, 0321-2011767"
+    },
+    {
+        "name": "Zafcom Wheels & Accessories",
+        "city": "Karachi",
+        "address": "Chaudhry Khaliq-uz-Zaman Road, Lower Gizri, Karachi",
+        "contactPerson": "Mr. Umar / Mr. Ali",
+        "telephone": "021-35373023-4",
+        "mobile": "0300-2306008, 0333-3535648"
+    },
+    {
+        "name": "Tyre World",
+        "city": "Karachi",
+        "address": "Plot No. 107-F, Khalid Bin Waleedd Road, Block 2 PECHS, Karachi",
+        "contactPerson": "Sohail Naseer / Mr. Hamza",
+        "telephone": "021-34528951",
+        "mobile": "0300-2055567, 0333-2323123"
+    },
+    {
+        "name": "SF Traders",
+        "city": "Karachi",
+        "address": "Shop No. 4, Zuljalal Centre, Opp. Rehmania Masjid, Main Tariq Road, Karachi",
+        "contactPerson": "Mr. Shahzad",
+        "telephone": "-",
+        "mobile": "0333-2242421"
+    },
+    {
+        "name": "Shahid Autos",
+        "city": "Karachi",
+        "address": "Bahadur Shah Market, Karachi",
+        "contactPerson": "Mr. Fawad",
+        "telephone": "-",
+        "mobile": "0332-7772356"
+    },
+    {
+        "name": "MS Traders",
+        "city": "Karachi",
+        "address": "National Stadium Road, Near TV Station, Karachi",
+        "contactPerson": "Mr. Saleem / Mr. Zain",
+        "telephone": "021-34939577",
+        "mobile": "0300-8207955, 0302-8224242"
+    },
+    {
+        "name": "Meer Motor Store",
+        "city": "Hyderabad",
+        "address": "Station Road, Hyderabad",
+        "contactPerson": "Seyd Ishrat Ali",
+        "telephone": "022-2780481",
+        "mobile": "0321-3043433, 0321-3017078"
+    },
+    {
+        "name": "Nusrat Traders",
+        "city": "Hyderabad",
+        "address": "Ghari Khata, Hyderabad",
+        "contactPerson": "Seyd Nusrat Ali",
+        "telephone": "022-2780486",
+        "mobile": "0312-2780486"
+    },
+    {
+        "name": "Wheel Lookz",
+        "city": "Hyderabad",
+        "address": "Auto Bahn Road, Latifabad, Hyderabad",
+        "contactPerson": "Seyd Bilal Ali",
+        "telephone": "022-2781443",
+        "mobile": "0314-2455425"
+    },
+    {
+        "name": "A One Tyre Centre",
+        "city": "Mirpur Khas",
+        "address": "Iqbal Road, Near Rehman Petrol Pump, Bhonsinghabad - Mirpur Khas",
+        "contactPerson": "Mr. Rashid / Mr. Shahid",
+        "telephone": "0233-872867, 0233-862098",
+        "mobile": "0333-2963995, 0333-2340457"
+    },
+    {
+        "name": "Super Autos",
+        "city": "Nawabshah",
+        "address": "District Council Road, Near New Police Station - Nawabshah",
+        "contactPerson": "Mr. Khalil / Mr. Zeeshan",
+        "telephone": "024-4361058, 024-4360020",
+        "mobile": "0301-3807650, 0300-3207080"
+    },
+    {
+        "name": "New Pak Autos",
+        "city": "Larkana",
+        "address": "Near Gulshan-e-Saeed Housing Scheme, Airport Road - Larkana",
+        "contactPerson": "Lakshmi / Prithvi",
+        "telephone": "0334-1257192",
+        "mobile": "0300-3420215, 0347-3472211"
+    },
+    {
+        "name": "Pakistan Motor Store",
+        "city": "Sukkur",
+        "address": "Hussaini Road - Sukkur",
+        "contactPerson": "Mr. Hannan",
+        "telephone": "071-5614735",
+        "mobile": "0300-9316391"
+    },
+    {
+        "name": "Awami Tyre House",
+        "city": "Sahiwal",
+        "address": "Railway Road - Sahiwal",
+        "contactPerson": "Waseem Shah",
+        "telephone": "040-4466822",
+        "mobile": "0332-7677822"
+    },
+    {
+        "name": "Ahmed Autos",
+        "city": "Rawalpindi",
+        "address": "Azhar Shaheed Market, Kashmir Road, Saddar - Rawalpindi",
+        "contactPerson": "Mr. Wali",
+        "telephone": "-",
+        "mobile": "0332-5006668"
+    },
+    {
+        "name": "Ahmed Tyre House",
+        "city": "Sadiqabad",
+        "address": "K.L.P Road - Sadiqabad",
+        "contactPerson": "Irfan Rasool / Ali Huzaifa",
+        "telephone": "068-5703532",
+        "mobile": "0300-9677803, 0300-0188887"
+    },
+    {
+        "name": "Azhar Traders",
+        "city": "Mianwali",
+        "address": "Truck Stand - Mianwali",
+        "contactPerson": "Mr. Azhar",
+        "telephone": "045-9230305",
+        "mobile": "0300-6091670"
+    },
+    {
+        "name": "Bahawalpur Tyre Corporation",
+        "city": "Bahawalpur",
+        "address": "Multan Road - Bahawalpur",
+        "contactPerson": "Mr. Rafay / Mr. Munir",
+        "telephone": "062-2889196, 062-2876410",
+        "mobile": "0300-8687788, 0321-6816618"
+    },
+    {
+        "name": "Capital Traders",
+        "city": "Islamabad",
+        "address": "Shop No. 05, Plot No. 03-F, 3rd Road, G-10 Markaz - Islamabad",
+        "contactPerson": "Abid Abbas",
+        "telephone": "-",
+        "mobile": "0311-5116511"
+    },
+    {
+        "name": "City Tyre",
+        "city": "Faisalabad",
+        "address": "23 Circular Road - Faisalabad",
+        "contactPerson": "M Asif",
+        "telephone": "-",
+        "mobile": "0302-7018167"
+    },
+    {
+        "name": "H.S Traders",
+        "city": "Rawalpindi",
+        "address": "Shop No.10, Saadi Road Saddar - Rawalpindi",
+        "contactPerson": "Dr. Humayun",
+        "telephone": "051-5527688",
+        "mobile": "0300-8547454"
+    },
+    {
+        "name": "Imran Tyre House",
+        "city": "Sadiqabad",
+        "address": "K L P Road, Opposite Hamadani Pump - Sadiqabad",
+        "contactPerson": "Mr. Imran",
+        "telephone": "068-35703532",
+        "mobile": "0300-9677803"
+    },
+    {
+        "name": "Muslim Traders",
+        "city": "Sargodha",
+        "address": "Opposite Trust Plaza, Quaid-e-Azam Road - Sargodha",
+        "contactPerson": "Mr. Akram / Mr. Nomi",
+        "telephone": "048-3768010, 048-3768011",
+        "mobile": "0300-9601156"
+    },
+    {
+        "name": "New National Automobiles",
+        "city": "Khanpur",
+        "address": "Haleem Market, By Pass Road - Khanpur",
+        "contactPerson": "Mr. Khurram",
+        "telephone": "068-573346",
+        "mobile": "0300-6702017"
+    },
+    {
+        "name": "Maqbool Tyre Services",
+        "city": "Sialkot",
+        "address": "General Bus Stand Wazirabad Road - Sialkot",
+        "contactPerson": "Masood Ahmed",
+        "telephone": "-",
+        "mobile": "0300-6012878"
+    },
+    {
+        "name": "Olympia Tyres",
+        "city": "Multan",
+        "address": "1 Karim Centre, Dera Adda - Multan",
+        "contactPerson": "Mr. Haseeb",
+        "telephone": "061-4543430, 061-4584783",
+        "mobile": "0321-6382004"
+    },
+    {
+        "name": "Punjab Auto Store",
+        "city": "Jhang",
+        "address": "Faisalabad Road, Near Darbar Gohar Shah - Jhang",
+        "contactPerson": "Mr. Irshan",
+        "telephone": "047-7622795",
+        "mobile": "0300-6506237"
+    },
+    {
+        "name": "Pakistan Tyre House",
+        "city": "Mirpur Azad Kashmir",
+        "address": "Allama Iqbal Road, Shop No. 06 Opposite - Mirpur Azad Kashmir",
+        "contactPerson": "Mr. Ashfaque",
+        "telephone": "058-27442240",
+        "mobile": "0334-5805825"
+    },
+    {
+        "name": "Rehman Tyre House",
+        "city": "Burewala",
+        "address": "Shop No. 08 General Bus Stand Multan Road - Burewala",
+        "contactPerson": "Mr. Tahir",
+        "telephone": "067-3355496",
+        "mobile": "0334-7007007"
+    },
+    {
+        "name": "Shahzad Enterprises",
+        "city": "Rawalpindi",
+        "address": "116 Saadi Road, Saddar - Rawalpindi",
+        "contactPerson": "Khawaja Safdar",
+        "telephone": "051-5524251, 051-5566710",
+        "mobile": "0333-5321974"
+    },
+    {
+        "name": "Safder Traders",
+        "city": "Sargodha",
+        "address": "Lahore Road, Opposite Riaz Motors - Sargodha",
+        "contactPerson": "Arshad Paracha",
+        "telephone": "048-3225511",
+        "mobile": "0300-6027228"
+    },
+    {
+        "name": "Shakeel Khadim Tyre House",
+        "city": "Dera Ghazi Khan",
+        "address": "Near Ghazi Bus Stand - Dera Ghazi Khan",
+        "contactPerson": "Mr. Shakeel",
+        "telephone": "067-3355496",
+        "mobile": "0308-6781767"
+    },
+    {
+        "name": "Speedy Wheelz",
+        "city": "Sialkot",
+        "address": "Muhallah Islamabad Road, Circula Road - Sialkot",
+        "contactPerson": "Huney Butt",
+        "telephone": "0524-5930086",
+        "mobile": "0300-8719190"
+    },
+    {
+        "name": "Tyre Gallery",
+        "city": "Islamabad",
+        "address": "Shop No. 03 Ground Floor, 97 Gondal Plaza, Fazal-e-Haq Road, Blue Area - Islamabad",
+        "contactPerson": "Mr. Faisal",
+        "telephone": "051-2804116",
+        "mobile": "0333-5281101"
+    },
+    {
+        "name": "Tyre Point",
+        "city": "Sheikhupura",
+        "address": "Near Green Market Lahore Road - Shaikhupura",
+        "contactPerson": "Mr. Mazhar",
+        "telephone": "-",
+        "mobile": "0321-4244286"
+    },
+    {
+        "name": "Malik Tyre Corporation",
+        "city": "Kohat",
+        "address": "University Road - Kohat",
+        "contactPerson": "Mr. Malook / Abdul Waheed",
+        "telephone": "092-32512774",
+        "mobile": "0333-9614552, 0333-9681421"
+    },
+    {
+        "name": "Malik Tyre Enterprises",
+        "city": "Peshawar",
+        "address": "Shop No. 06, F-C Dil Jan Plaza, Sunheri Masjid Road - Peshawar",
+        "contactPerson": "Mr. Owais",
+        "telephone": "091-5275057, 091-2570457",
+        "mobile": "0334-9241005"
+    },
+    {
+        "name": "Mansehra Tyre Corporation",
+        "city": "Mansehra",
+        "address": "Al-Farooq Market, Near Sabzi Mandi - Mansehra",
+        "contactPerson": "Mr. Tariq",
+        "telephone": "099-7301277",
+        "mobile": "0312-6343555"
+    },
+
+        {
+            "name": "M. Muhammad Ahmed & Son",
+            "city": "Abbottabad",
+            "address": "229 - Mansehra Road - Abbottabad",
+            "contactPerson": "Mr. Rasheed / Mr. Shoaib",
+            "telephone": "99332534",
+            "mobile": "0334-9119020"
+        },
+        {
+            "name": "New Punjab Tyre House",
+            "city": "Dera Ismail Khan",
+            "address": "Near Kashmir Chowk, Circular Road - Dera Ismail Khan",
+            "contactPerson": "Mr. Iqbal",
+            "telephone": "096-6718752",
+            "mobile": "0336-1078745, 0345-9240587"
+        },
+    
+        {
+            "name": "Swat Trading Agency",
+            "city": "Swat",
+            "address": "Madyan Road, Near Swat CNG Station - Swat",
+            "contactPerson": "Naimatullah",
+            "telephone": "094-6812357, 094-6812345",
+            "mobile": "0334-9686766, 0344-9800357"
+        },
+        {
+            "name": "Imran Tyre Centre",
+            "city": "Peshawar",
+            "address": "Shop No. 7 & 8, Cantonment Commercial Complex, Fakhar-e-Alam Road, Peshawar Cantt, Peshawar",
+            "contactPerson": "",
+            "telephone": "091-5260468",
+            "mobile": "0336-9071952, 0333-9001235"
+        },
+        {
+            "name": "Swat Trading Agency",
+            "city": "Swat",
+            "address": "Near Swat CNG Pump, Fiza Gut, Mingora - Swat",
+            "contactPerson": "Haji Abdul Shakoor",
+            "telephone": "-",
+            "mobile": "0332-9635357"
+        },
+        {
+            "name": "Mardan Tyres",
+            "city": "Mardan",
+            "address": "Adnan Plaza, Charsadda Chowk, Mardan.",
+            "contactPerson": "Haji Wali / Zubair",
+            "telephone": "-",
+            "mobile": "0315-9785992, 0300-5701477"
+        },
+        {
+            "name": "Rustam Tyre",
+            "city": "Mardan",
+            "address": "Enayat Shopping Centre, Charsada Road - Mardan",
+            "contactPerson": "Fazal-e-Malik",
+            "telephone": "0937-864789",
+            "mobile": "0300-5724177"
+        },
+        {
+            "name": "New Madina Tyre",
+            "city": "Quetta",
+            "address": "New Zarghoon Road, Opposite Toyota Zarghoon Motors - Quetta",
+            "contactPerson": "Abdul Nafay",
+            "telephone": "081-2450839",
+            "mobile": "0300-3860500, 0317-8009933"
+        }
+    ]
+    

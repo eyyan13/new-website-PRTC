@@ -137,5 +137,28 @@ function toggleDetails(button) {
 }
 
 
+    // Search Functionality
+    document.getElementById("searchInput").addEventListener("input", function () {
+        const searchValue = this.value.toLowerCase();
+        const rows = document.querySelectorAll("#dealersTable tbody tr");
+
+        rows.forEach(row => {
+            const name = row.cells[0].textContent.toLowerCase();
+            const address = row.cells[1].textContent.toLowerCase();
+            const city = row.cells[2].textContent.toLowerCase();
+
+            if (name.includes(searchValue) || address.includes(searchValue) || city.includes(searchValue)) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        });
+    });
+
+    // Find Nearest Dealer Function (Placeholder)
+    function findNearestDealer() {
+        alert("Finding nearest dealer...");
+        // Add logic to find nearest dealer using Geolocation API or other methods
+    }
 
   
