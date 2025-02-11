@@ -14,7 +14,11 @@
 
   /* Carousel Image Styling */
 
-
+  .carousel-item img {
+    object-fit: cover; /* Maintain aspect ratio and fill space */
+    height: 600px; /* Adjust height for the images */
+    filter: brightness(1); /* Ensure the image is fully bright */
+  width:100%;}
  
 
   
@@ -59,37 +63,7 @@
 }
 
 /* Media query for small screens (e.g., mobile devices) */
-@media (max-width: 1920px) {
-    .carousel-item img {
-      height: 550px;
-      width: 100%;
-     
-    }
-  }
-  
-  @media (max-width: 1423px) {
-    .carousel-item img {
-      height: 500px;
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    .carousel-item img {
-      height: 450px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .carousel-item img {
-      height: 350px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .carousel-item img {
-      height: 300px;
-    }
-  }
+
   
   
 
