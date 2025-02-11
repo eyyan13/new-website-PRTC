@@ -59,34 +59,38 @@
 }
 
 /* Media query for small screens (e.g., mobile devices) */
-@media (max-width: 1423px) {
+@media (max-width: 1920px) {
     .carousel-item img {
-      height: auto; /* Maintain aspect ratio */
-      max-height: 550px; /* Prevent excessive stretching */
+      height: 550px;
       width: 100%;
+     
+    }
+  }
+  
+  @media (max-width: 1423px) {
+    .carousel-item img {
+      height: 500px;
     }
   }
   
   @media (max-width: 1024px) {
     .carousel-item img {
-      height: auto;
-      max-height: 400px;
+      height: 450px;
     }
   }
   
   @media (max-width: 768px) {
     .carousel-item img {
-      height: auto;
-      max-height: 30rem;
+      height: 350px;
     }
   }
   
   @media (max-width: 480px) {
     .carousel-item img {
-      height: auto;
-      max-height: 25rem;
+      height: 300px;
     }
   }
+  
   
 
 .fw-medium {
