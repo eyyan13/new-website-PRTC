@@ -59,61 +59,35 @@
 }
 
 /* Media query for small screens (e.g., mobile devices) */
-/* Default styles (as provided by you) */
-.carousel-item img {
-    object-fit: cover; /* Maintain aspect ratio and fill space */
-    height: 600px; /* Adjust height for the images */
-    filter: brightness(1); /* Ensure the image is fully bright */
-    width: 90%; /* Set width to 90% */
-}
-
-/* Media query for screens with a maximum width of 1423px and height of 773px */
-@media only screen and (max-width: 1423px) and (max-height: 773px) {
+@media (max-width: 1423px) {
     .carousel-item img {
-        height: 603px; /* Override height for this specific resolution */
-        width: 100%; /* Override width to fill the container */
+      height: auto; /* Maintain aspect ratio */
+      max-height: 550px; /* Prevent excessive stretching */
+      width: 100%;
     }
-}
-
-/* Media query for screens with a maximum width of 1200px */
-@media only screen and (max-width: 1200px) {
+  }
+  
+  @media (max-width: 1024px) {
     .carousel-item img {
-        height: 500px; /* Override height for smaller screens */
-        width: 100%; /* Override width to fill the container */
+      height: auto;
+      max-height: 400px;
     }
-}
-
-/* Media query for screens with a maximum width of 992px (tablets) */
-@media only screen and (max-width: 992px) {
+  }
+  
+  @media (max-width: 768px) {
     .carousel-item img {
-        height: 400px; /* Override height for tablets */
-        width: 100%; /* Override width to fill the container */
+      height: auto;
+      max-height: 30rem;
     }
-}
-
-/* Media query for screens with a maximum width of 768px (small tablets) */
-@media only screen and (max-width: 768px) {
+  }
+  
+  @media (max-width: 480px) {
     .carousel-item img {
-        height: 300px; /* Override height for small tablets */
-        width: 100%; /* Override width to fill the container */
+      height: auto;
+      max-height: 25rem;
     }
-}
-
-/* Media query for screens with a maximum width of 576px (mobile devices) */
-@media only screen and (max-width: 576px) {
-    .carousel-item img {
-        height: 250px; /* Override height for mobile devices */
-        width: 100%; /* Override width to fill the container */
-    }
-}
-
-/* Media query for screens with a maximum width of 400px (small mobile devices) */
-@media only screen and (max-width: 400px) {
-    .carousel-item img {
-        height: 200px; /* Override height for very small mobile devices */
-        width: 100%; /* Override width to fill the container */
-    }
-}
+  }
+  
 
 .fw-medium {
     font-weight: 600 !important;
