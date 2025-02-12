@@ -58,7 +58,7 @@
     {
         "name": "Zafcom Trading",
         "city": "Karachi",
-        "address": "Defence Garden, Opposite National Medical Hospital, D.H.A. Phase 1, Karachi",
+        "address": "Defense Garden, Opposite National Medical Hospital, D.H.A. Phase 1, Karachi",
         "contactPerson": "Mr. Faisal / Mr. Danish",
         "telephone": "021-35386383",
         "mobile": "0300-8235830, 0321-2011767"
@@ -160,9 +160,161 @@
         "mobile": "0300-9316391"
     },
     {
+        "name": "Shafqat Tyre & Rim House",
+        "city": "Kharian",
+        "address": "G.T. Road, Opp. Raza Petrol Pump and CNG, Kharian",
+        "contactPerson": "Mr. Shoaib",
+        "telephone": "-",
+        "mobile": "0331-9529378"
+    },
+    {
+        "name": "Faiz Lasani Tyre House",
+        "city": "Bahawalnagar",
+        "address": "Al Mehboob Petroleum, Bypass Road, Haroonabad, Bahawalnagar",
+        "contactPerson": "Faiz Lasani",
+        "telephone": "-",
+        "mobile": "0300-7191831"
+    },
+    {
+        "name": "Pak Punjab Tyres",
+        "city": "Lahore",
+        "address": "1-Naqi Road, Corner Nila Gumbad, Data Gunj Bukhsh Town, Lahore",
+        "contactPerson": "Mr. Khurram",
+        "telephone": "042-35163037",
+        "mobile": "0323-8887939"
+    },
+    {
+        "name": "Mashallah Tyre",
+        "city": "Chiniot",
+        "address": "Malik Zulfiqar Plaza, Near Railway Phatak, Lahore Road, Chiniot",
+        "contactPerson": "Mr. Adil",
+        "telephone": "-",
+        "mobile": "0300-7713035"
+    },
+    {
+        "name": "Asif Traders",
+        "city": "Lahore",
+        "address": "99-B Hussain Chowk, 3 MM Alam Road, Gulberg, Lahore",
+        "contactPerson": "Mr. Nasir",
+        "telephone": "042-35772888",
+        "mobile": "0305-5551956"
+    },
+    {
+        "name": "Lahore Tyre Traders",
+        "city": "Lahore",
+        "address": "772-M, Main Boulevard, Johar Town, Lahore",
+        "contactPerson": "Ali Akhtar",
+        "telephone": "-",
+        "mobile": "0321-9442144"
+    },
+    {
+        "name": "Lahore Tyre Traders",
+        "city": "Lahore",
+        "address": "14-Dina Nath Mansion, Nila Gumbad, Lahore",
+        "contactPerson": "Haider Akhtar",
+        "telephone": "-",
+        "mobile": "0321-94577080"
+    },
+    {
+        "name": "New Rashid Tyre",
+        "city": "Muzaffargarh",
+        "address": "Near Oasis Hotel, Khursheedabad, Jhang Road, Muzaffargarh",
+        "contactPerson": "Danish Zulfiqar",
+        "telephone": "066-8211111",
+        "mobile": "0318-4755676"
+    },
+    {
+        "name": "Moman Tyres",
+        "city": "Lahore",
+        "address": "N-38 R-319 Outside, Masti Gate Badamibagh, Lahore",
+        "contactPerson": "Mr. Athar",
+        "telephone": "042-37728437",
+        "mobile": "0300-4313314"
+    },
+    {
+        "name": "Bismillah Tyre Service",
+        "city": "Lahore",
+        "address": "Tyre Market Naulakkha Hotel Building, Near Railway Station, Lahore",
+        "contactPerson": "Hafiz Yasir",
+        "telephone": "-",
+        "mobile": "0323-8868458"
+    },
+    {
+        "name": "B.M. Traders",
+        "city": "Lahore",
+        "address": "55-B, Near National Bank, Opp. Moon Market, Faisal Town, Lahore",
+        "contactPerson": "Abbas Ahmed",
+        "telephone": "-",
+        "mobile": "0300-1956515"
+    },
+    {
+        "name": "Haider Tyre & 3D Wheel Alignment",
+        "city": "Lahore",
+        "address": "West Canal Bank, Behria Town, Main Gate Lahore",
+        "contactPerson": "Mr. Mazhar",
+        "telephone": "042-35454022",
+        "mobile": "0345-8488839"
+    },
+    {
+        "name": "The Tyre Club",
+        "city": "Lahore",
+        "address": "Plot No.1, Main Boulevard, Near Adil Hospital, Defence, Lahore",
+        "contactPerson": "Mr. Javaid Iqbal",
+        "telephone": "042-36621291",
+        "mobile": "0345-8282394"
+    },
+    {
+        "name": "Javaid Tyre",
+        "city": "Lahore",
+        "address": "Rattan Cinema, Lakshmi Chowk, Lahore",
+        "contactPerson": "Mr. Aqeel",
+        "telephone": "042-37227022, 042-37310900",
+        "mobile": "0300-9492521"
+    },
+    {
+        "name": "Jullundar Motor Agency",
+        "city": "Lahore",
+        "address": "12 Meclagon Road, Nila Gumbad, Lahore",
+        "contactPerson": "Mr. Shariyar",
+        "telephone": "042-37323836, 042-37353200",
+        "mobile": "0322-4448296"
+    },
+    {
+        "name": "Khawaja Autos",
+        "city": "Lahore",
+        "address": "98-Grain Market, Badami Bagh, Lahore",
+        "contactPerson": "Mr. Hamza",
+        "telephone": "042-37700646",
+        "mobile": "0301-4091226"
+    },
+    {
+        "name": "Heera Tyre House",
+        "city": "Gujrat",
+        "address": "House No.B-948, E/16, Street.1, Gulshan Colony, Gujrat",
+        "contactPerson": "Rehan Mehmood",
+        "telephone": "-",
+        "mobile": "0304-6906096"
+    },
+    {
+        "name": "Rehman Traders",
+        "city": "Toba Tek Singh",
+        "address": "Madina Market, Rajana Road, Toba Tek Singh",
+        "contactPerson": "Mr. Naveed",
+        "telephone": "-",
+        "mobile": "0301-7290001"
+    },
+    {
+        "name": "Saleem Tyre Works",
+        "city": "Lahore",
+        "address": "House No.LDA-1, Nasir Colony, Gulberg 3, Lahore",
+        "contactPerson": "Saleem Majeed",
+        "telephone": "-",
+        "mobile": "0321-4559987"
+    },
+    {
         "name": "Awami Tyre House",
         "city": "Sahiwal",
-        "address": "Railway Road - Sahiwal",
+        "address": "Raliway Road - Sahiwal",
         "contactPerson": "Waseem Shah",
         "telephone": "040-4466822",
         "mobile": "0332-7677822"
@@ -231,6 +383,7 @@
         "telephone": "068-35703532",
         "mobile": "0300-9677803"
     },
+   
     {
         "name": "Muslim Traders",
         "city": "Sargodha",
