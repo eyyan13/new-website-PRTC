@@ -31,7 +31,9 @@
 /* Media query for small screens (e.g., mobile devices) */
 
   
-  
+.spinner-border {
+    color: red !important;
+}
 
 .fw-medium {
     font-weight: 600 !important;
