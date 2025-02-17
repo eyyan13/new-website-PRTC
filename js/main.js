@@ -161,4 +161,22 @@ function toggleDetails(button) {
         // Add logic to find nearest dealer using Geolocation API or other methods
     }
 
-  
+    document.addEventListener("DOMContentLoaded", function () {
+        const patternCards = document.querySelectorAll(".pattern-card"); // Select all cards
+    
+        patternCards.forEach(card => {
+            card.addEventListener("click", function () {
+                // Get the image inside the clicked card
+                const imgSrc = card.querySelector(".pattern-img").src;
+    
+                // Update modal image dynamically
+                document.getElementById("patternImage").src = imgSrc;
+    
+                // Show modal
+                let modal = new bootstrap.Modal(document.getElementById("patternModal"));
+                modal.show();
+            });
+        });
+    });
+    
+    

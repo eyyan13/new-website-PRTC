@@ -33,9 +33,57 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+<!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+
+
 
     <style>
- 
+ /* Full-screen modal styling */
+.modal {
+    display: none; /* Modal ko default hide rakhein */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in animation */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    animation: slideIn 0.5s ease-in-out; /* Smooth slide-in animation */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
+}
+
+/* Close button styling */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
 
     body{
 margin: 0;
@@ -247,12 +295,29 @@ padding: 0;
         display: none;
     }
 }
+@media (max-width: 768px) { /* Targets tablets and smaller devices */
+    .footer h4 {
+        margin-top: 25px !important;  /* Adds space below headings */
+        padding-bottom: 6px;
+        display: block;
+    }
+ 
+    
+}
+
 
       </style>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="wabtn" id="wabutton">
+        <style> [wa-tooltip] { position: relative; cursor: default;  &:hover { &::before { content: attr(wa-tooltip); font-size: 16px; text-align: center; position: absolute; display: block; right: null; left: calc(0% + 100px); min-width: 200px; max-width: 200px; bottom: calc(100% + 40px); transform: translate(-50%); animation: fade-in 500ms ease; background: #00E785; border-radius: 4px; padding: 10px; color: #ffffff; z-index: 1; } } }  @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }  [wa-tooltip] {  }  @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }</style>
+        <a wa-tooltip="Click here to chat with PRTC!" target="_blank" href="https://wa.me/92462441913?text=Hi%20there%20%F0%9F%91%8B%0A%0AHow%20can%20I%20help%20you?" style=" cursor: pointer;height: 48px;width: auto;padding: 7px 7px 7px 7px;position: fixed !important;color: #fff;bottom: 20px;right: unset;display: flex;text-decoration: none;font-size: 18px;font-weight: 600;font-family: sans-serif;align-items: center;z-index: 999999999 !important;background-color: #00E785;box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4);border-radius: 100px;animation: pulse 2.5s ease infinite;left: 20px;">
+          <svg width="34" height="34" style="padding: 5px;" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1024_354)"><path d="M23.8759 4.06939C21.4959 1.68839 18.3316 0.253548 14.9723 0.0320463C11.613 -0.189455 8.28774 0.817483 5.61565 2.86535C2.94357 4.91323 1.10682 7.86244 0.447451 11.1638C-0.21192 14.4652 0.351026 17.8937 2.03146 20.8109L0.0625 28.0004L7.42006 26.0712C9.45505 27.1794 11.7353 27.7601 14.0524 27.7602H14.0583C16.8029 27.7599 19.4859 26.946 21.768 25.4212C24.0502 23.8965 25.829 21.7294 26.8798 19.1939C27.9305 16.6583 28.206 13.8682 27.6713 11.1761C27.1367 8.48406 25.8159 6.01095 23.8759 4.06939ZM14.0583 25.4169H14.0538C11.988 25.417 9.96008 24.8617 8.1825 23.8091L7.7611 23.5593L3.3945 24.704L4.56014 20.448L4.28546 20.0117C2.92594 17.8454 2.32491 15.2886 2.57684 12.7434C2.82877 10.1982 3.91938 7.80894 5.67722 5.95113C7.43506 4.09332 9.76045 2.87235 12.2878 2.48017C14.8152 2.08799 17.4013 2.54684 19.6395 3.78457C21.8776 5.02231 23.641 6.96875 24.6524 9.3179C25.6638 11.6671 25.8659 14.2857 25.2268 16.7622C24.5877 19.2387 23.1438 21.4326 21.122 22.999C19.1001 24.5655 16.6151 25.4156 14.0575 25.4157L14.0583 25.4169Z" fill="#E0E0E0"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6291 7.98363C10.3723 7.41271 10.1019 7.40123 9.85771 7.39143C9.65779 7.38275 9.42903 7.38331 9.20083 7.38331C9.0271 7.3879 8.8562 7.42837 8.69887 7.5022C8.54154 7.57602 8.40119 7.68159 8.28663 7.81227C7.899 8.17929 7.59209 8.62305 7.38547 9.11526C7.17884 9.60747 7.07704 10.1373 7.08655 10.6711C7.08655 12.3578 8.31519 13.9877 8.48655 14.2164C8.65791 14.4452 10.8581 18.0169 14.3425 19.3908C17.2382 20.5327 17.8276 20.3056 18.4562 20.2485C19.0848 20.1913 20.4843 19.4194 20.7701 18.6189C21.056 17.8183 21.0557 17.1323 20.9701 16.989C20.8844 16.8456 20.6559 16.7605 20.3129 16.5889C19.9699 16.4172 18.2849 15.5879 17.9704 15.4736C17.656 15.3594 17.4275 15.3023 17.199 15.6455C16.9705 15.9888 16.3139 16.7602 16.1137 16.9895C15.9135 17.2189 15.7136 17.2471 15.3709 17.0758C14.3603 16.6729 13.4275 16.0972 12.6143 15.3745C11.8648 14.6818 11.2221 13.8819 10.7072 13.0007C10.5073 12.6579 10.6857 12.472 10.8579 12.3007C11.0119 12.1472 11.2006 11.9005 11.3722 11.7003C11.5129 11.5271 11.6282 11.3346 11.7147 11.1289C11.7603 11.0343 11.7817 10.9299 11.7768 10.825C11.7719 10.7201 11.7409 10.6182 11.6867 10.5283C11.6001 10.3566 10.9337 8.66151 10.6291 7.98363Z" fill="white"></path><path d="M23.7628 4.02445C21.4107 1.66917 18.2825 0.249336 14.9611 0.0294866C11.6397 -0.190363 8.35161 0.804769 5.70953 2.82947C3.06745 4.85417 1.25154 7.77034 0.600156 11.0346C-0.051233 14.299 0.506321 17.6888 2.16894 20.5724L0.222656 27.6808L7.49566 25.7737C9.50727 26.8692 11.7613 27.4432 14.0519 27.4434H14.0577C16.7711 27.4436 19.4235 26.6392 21.6798 25.1321C23.936 23.6249 25.6947 21.4825 26.7335 18.9759C27.7722 16.4693 28.0444 13.711 27.5157 11.0497C26.9869 8.38835 25.6809 5.94358 23.7628 4.02445ZM14.0577 25.1269H14.0547C12.0125 25.1271 10.0078 24.5782 8.25054 23.5377L7.8339 23.2907L3.51686 24.4222L4.66906 20.2143L4.39774 19.7831C3.05387 17.6415 2.4598 15.1141 2.70892 12.598C2.95804 10.082 4.03622 7.72013 5.77398 5.88366C7.51173 4.04719 9.81051 2.84028 12.3089 2.45266C14.8074 2.06505 17.3638 2.5187 19.5763 3.74232C21.7888 4.96593 23.5319 6.89011 24.5317 9.21238C25.5314 11.5346 25.7311 14.1233 25.0993 16.5714C24.4675 19.0195 23.0401 21.1883 21.0414 22.7367C19.0427 24.2851 16.5861 25.1254 14.0577 25.1255V25.1269Z" fill="white"></path></g><defs><clipPath id="clip0_1024_354"><rect width="27.8748" height="28" fill="white" transform="translate(0.0625)"></rect></clipPath></defs></svg>
+          <span class="button-text"></span>
+        </a>
+      </div>
     <div class="container-fluid bg-light p-0">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
@@ -384,7 +449,7 @@ padding: 0;
 
     <div class="container py-4">
         <!-- Heading for Cars -->
-        <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px;">Patterns for Car</h4>
+        <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px;">Car Tyre Patterns</h4>
         
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Potenza Card -->
@@ -396,10 +461,10 @@ padding: 0;
                         <div class="card-body d-flex flex-column align-items-center text-center" 
                              style="display: flex; justify-content: flex-start;">
                             <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                 POTENZA
                             </h5>
-                            <p class="card-text" style="text-align: left;">Supports the efforts of drivers who are aiming for the top in the motorsports world and pursuing the upper limits of speed allowed by its technology.</p>
+                            <p class="card-text" style="text-align: left;">The Bridgestone Potenza is a line of high-performance tires designed to deliver superior handling, speed, and stability. Our range includes a variety of models, each tailored for specific driving needs, from street performance to track-ready capabilities. The pattern is the ultimate in stability, steering response ,wet & dry grip, traction and braking.</p>
                         </div>
                     </div>
                 </a>
@@ -414,10 +479,10 @@ padding: 0;
                         <div class="card-body d-flex flex-column align-items-center text-center" 
                              style="display: flex; justify-content: flex-start;">
                             <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                 TECHNO SPORTS
                             </h5>
-                            <p class="card-text" style="text-align: left;">Stand out from the crowd with stylish lightning grooves and eye-catching tread patterns while driving, and feel in control of your car on the road.</p>
+                            <p class="card-text" style="text-align: left;">The Bridgestone Techno Sports is a budget-friendly performance tyre designed for everyday driving with a sporty edge. Featuring an asymmetric tread pattern, large shoulder blocks, and optimized grooves, it delivers a balance of dry grip, wet traction, and durability</p>
                         </div>
                     </div>
                 </a>
@@ -432,7 +497,7 @@ padding: 0;
                         <div class="card-body d-flex flex-column align-items-center text-center" 
                              style="display: flex; justify-content: flex-start;">
                             <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                 TURANZA
                             </h5>
                             <p class="card-text" style="text-align: left;">Aims to achieve the high-level balance that luxury car owners seek, combining comfort, security, driving performance, and advanced technology.</p>
@@ -450,7 +515,7 @@ padding: 0;
                         <div class="card-body d-flex flex-column align-items-center text-center" 
                              style="display: flex; justify-content: flex-start;">
                             <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                 ECOPIA
                             </h5>
                             <p class="card-text" style="text-align: left;">Provides eco-friendly performance through higher fuel efficiency and safety. It allows for reduced rolling resistance, which in turn enhances fuel efficiency.</p>
@@ -461,8 +526,8 @@ padding: 0;
         </div>
         <div class="container py-4">
             <!-- Heading for SUV -->
-            <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px;">
-                Patterns for SUV
+            <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px; margin-top: 10px;">
+                 SUV Tyre Patterns
             </h4>
         
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -475,10 +540,10 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     ALENZA
                                 </h5>
-                                <p class="card-text" style="text-align: left;">Specially designed for SUVs to maximize performance on both dry and slippery roads, providing confidence and comfort when moving in urban areas.</p>
+                                <p class="card-text" style="text-align: left;">The Bridgestone Alenza is a premium SUV tyre designed for comfort, durability, and all-season performance. It features optimized grooves for wet traction, reinforced shoulder blocks for stability, and a wear-resistant compound for longer life, ensuring a smooth and quiet ride</p>
                             </div>
                         </div>
                     </a>
@@ -493,7 +558,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     DUELER
                                 </h5>
                                 <p class="card-text" style="text-align: left;">Combines high-level traction and toughness that full-fledged 4WD vehicles require. It provides superior driving performance, comfort, and reliability.</p>
@@ -511,7 +576,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     ECOPIA
                                 </h5>
                                 <p class="card-text" style="text-align: left;">Ecopia line offers fuel-efficient tires tailored for SUVs, providing a balance of performance, comfort, and environmental benefits.</p>
@@ -533,10 +598,10 @@ padding: 0;
                         <div class="card-body d-flex flex-column align-items-center text-center" 
                              style="display: flex; justify-content: flex-start;">
                             <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                 DURAVIS
                             </h5>
-                            <p class="card-text" style="text-align: left;">Duravis tire brand is designed for light commercial vehicles. Heavy-duty, tough, and tested against extreme elements, Duravis is a tire designed for grueling commercial use.</p>
+                            <p class="card-text" style="text-align: left;">The Bridgestone Duravis is a heavy-duty tyre built for commercial vehicles, offering durability, longevity, and fuel efficiency. Its robust tread design enhances traction and wear resistance, making it ideal for tough road conditions and high-load applications</p>
                         </div>
                     </div>
                 </a>
@@ -551,7 +616,7 @@ padding: 0;
                         <div class="card-body d-flex flex-column align-items-center text-center" 
                              style="display: flex; justify-content: flex-start;">
                             <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                 LEO
                             </h5>
                             <p class="card-text" style="text-align: left;">LEO 677 is a commercial tire designed for vehicles such as vans and pick-ups. It features a wide tread design that provides long tread life, excellent loading capacity, superior handling, and a smooth ride.</p>
@@ -562,21 +627,36 @@ padding: 0;
         
             <!-- R623 Card -->
             <div class="col">
-                <a href="commercial.html" style="text-decoration: none; color: inherit;">
-                    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                        <img src="img/r623.jpeg" class="card-img-top" alt="R623"  
-                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                        <div class="card-body d-flex flex-column align-items-center text-center" 
-                             style="display: flex; justify-content: flex-start;">
-                            <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
-                                R623
-                            </h5>
-                            <p class="card-text" style="text-align: left;">R623 is a premium tire designed specifically for light commercial vehicles and vans, offering dependable performance, comfort, and safety. The compound gives enhanced control in the wet.</p>
+                <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
+                    <img src="img/r623.jpeg" class="card-img-top pattern-image"  alt="R623" 
+                         data-pattern="R625" 
+                         style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" 
+                         style="display: flex; justify-content: flex-start;">
+                        <h5 class="card-title" 
+                            style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                            R623
+                        </h5>
+                        <p class="card-text" style="text-align: left;">R623 is a premium tire designed specifically for light commercial vehicles and vans, offering dependable performance, comfort, and safety. The compound gives enhanced control in the wet.</p>
+                    </div>
+                </div>
+            </div>
+               
+
+            <div class="modal fade" id="LOLModal" tabindex="-1" aria-labelledby="turanzaModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="tyres jpeg/R623-01 (1).jpg" alt="Turanza" class="img-fluid">
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+                </div>
+            
         
             <!-- R265 Card -->
             <div class="col">
@@ -587,7 +667,7 @@ padding: 0;
                         <div class="card-body d-flex flex-column align-items-center text-center" 
                              style="display: flex; justify-content: flex-start;">
                             <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                 R265
                             </h5>
                             <p class="card-text" style="text-align: left;">R265 is an all-position steel-belted radial rib tire designed for commercial light trucks and vans. Its ribbed tread pattern enhances fuel efficiency and reduces road noise, providing a quieter ride.</p>
@@ -600,7 +680,7 @@ padding: 0;
         <div class="container py-4">
             <!-- Heading for Truck & Bus -->
             <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px;">
-                Patterns for Truck & Bus
+                Truck & Bus Tyre Patterns
             </h4>
         
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -613,7 +693,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     R187 / R187 (SUPER)
                                 </h5>
                                 <p class="card-text" style="text-align: left;">V-Steel Rib Super R187 is a commercial-grade tire designed for light and medium trucks, offering enhanced durability, traction, and comfort for highway applications.</p>
@@ -631,7 +711,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     ECOPIA
                                 </h5>
                                 <p class="card-text" style="text-align: left;">ECOPIA tyres return more energy back to the tyre instead of generating heat and compromising fuel efficiency. Ecopia tyres help channel water away from the tyre through circumferential grooves.</p>
@@ -649,7 +729,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     G610
                                 </h5>
                                 <p class="card-text" style="text-align: left;">G610 is a commercial truck tire designed for durability and performance in various applications. It is suitable for all positions on trucks, making it a versatile choice for various commercial needs.</p>
@@ -667,7 +747,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     R294
                                 </h5>
                                 <p class="card-text" style="text-align: left;">R294 is a highway terrain, all-season tire designed for commercial vehicles, specifically for the steer axle. Its five-rib pattern ensures even load distribution across any axle position, enhancing stability and handling.</p>
@@ -685,7 +765,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     M857
                                 </h5>
                                 <p class="card-text" style="text-align: left;">M857 is an all-position radial tire engineered for on- and off-highway applications, particularly suited for vehicles such as dump trucks, logging rigs, and refuse transporters.</p>
@@ -703,7 +783,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     VSJ
                                 </h5>
                                 <p class="card-text" style="text-align: left;">V-Steel Jamal (VSJ) is a radial tire engineered for military and rescue vehicles operating on desert terrain, sand, and paved roads.</p>
@@ -717,7 +797,7 @@ padding: 0;
         <div class="container py-4">
             <!-- Heading for Industrial -->
             <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px;">
-                Patterns for Industrial
+                Industrial Tyre Patterns
             </h4>
         
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -730,7 +810,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     U-LUG
                                 </h5>
                                 <p class="card-text" style="text-align: left;">U-Lug is a durable pneumatic tyre engineered for industrial vehicles such as forklifts, trucks, and shovel loaders, its design ensures reliable performance across various surfaces.</p>
@@ -748,7 +828,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     J-LUG
                                 </h5>
                                 <p class="card-text" style="text-align: left;">J-Lug is a highly puncture-resistant pneumatic tyre designed for industrial applications, its robust construction enhances durability and minimizes downtime in demanding work environments.</p>
@@ -766,7 +846,7 @@ padding: 0;
                             <div class="card-body d-flex flex-column align-items-center text-center" 
                                  style="display: flex; justify-content: flex-start;">
                                 <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600;">
+                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
                                     PL01 SOLID
                                 </h5>
                                 <p class="card-text" style="text-align: left;">The PL01 is entirely composed of a rubber compound, eliminating the need for air inflation and ensuring consistent performance without the risk of punctures.</p>
