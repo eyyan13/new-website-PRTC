@@ -297,14 +297,20 @@ padding: 0;
 }
 @media (max-width: 768px) { /* Targets tablets and smaller devices */
     .footer h4 {
-        margin-top: 25px !important;  /* Adds space below headings */
-        padding-bottom: 6px;
+        margin-top: 50px !important;  /* Adds space below headings */
+
         display: block;
     }
- 
+    .footer p {
+    margin-top: 2px !important; /* Reduce space above links */
+    margin-bottom: 2px !important; /* Keep links close */
+
     
 }
-
+.source{
+    margin-left: -20%;
+}
+}
 
       </style>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
@@ -881,7 +887,7 @@ padding: 0;
     <div class="container-fluid bg-dark text-light footer pt-1 mt-5 no-padding wow fadeIn" data-wow-delay="0.1s"> <!-- Added no-padding -->
         <div class="container py-5 no-padding"> <!-- Added no-padding -->
             <div class="col-12 text-center">
-                <img src="img/PRTC.png" alt="logo" style="width: 25rem; margin-top: -90px;">
+                <img class="source" src="img/PRTC.png" alt="logo" style="width: 25rem; margin-top: -90px;">
             </div>
             <div class="row g-5">
                 <div class="row mt-4">
