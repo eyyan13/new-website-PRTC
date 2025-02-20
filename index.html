@@ -52,15 +52,17 @@
     justify-content: center;
     align-items: center;
     animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in animation */
+ 
 }
 
 .modal-content {
+  
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     max-width: 90%;
-    max-height: 90%;
-    overflow: auto;
+    max-height: 40%;
+  margin-bottom: -30px;
     animation: slideIn 0.5s ease-in-out; /* Smooth slide-in animation */
 }
 
@@ -404,7 +406,7 @@ padding: 0;
             </div>
             <div class="carousel-item">
                 <div class="carousel-image-wrapper">
-                    <img src="img/tb-01.jpg" class="d-block w-100" alt="Slide 3">
+                    <img src="img/truck-01.jpg" class="d-block w-100" alt="Slide 3">
                 </div>
             </div>
             <div class="carousel-item">
@@ -459,76 +461,231 @@ padding: 0;
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Potenza Card -->
             <div class="col">
-                <a href="passengercarradial.html" style="text-decoration: none; color: inherit;">
-                    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                        <img src="img/POTENZA (1).jpeg" class="card-img-top" alt="Potenza"  
-                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                        <div class="card-body d-flex flex-column align-items-center text-center" 
-                             style="display: flex; justify-content: flex-start;">
-                            <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                POTENZA
-                            </h5>
-                            <p class="card-text" style="text-align: left;">The Bridgestone Potenza is a line of high-performance tires designed to deliver superior handling, speed, and stability. Our range includes a variety of models, each tailored for specific driving needs, from street performance to track-ready capabilities. The pattern is the ultimate in stability, steering response ,wet & dry grip, traction and braking.</p>
+                <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#re0044">
+                    <img src="img/POTENZA (1).jpeg" class="card-img-top" alt="Potenza"  
+                         style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" 
+                         style="display: flex; justify-content: flex-start;">
+                        <h5 class="card-title" 
+                            style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                            POTENZA
+                        </h5>
+                        <p class="card-text" style="text-align: left;">The Bridgestone Potenza is a line of high-performance tires designed to deliver superior handling, speed, and stability. Our range includes a variety of models, each tailored for specific driving needs, from street performance to track-ready capabilities. The pattern is the ultimate in stability, steering response ,wet & dry grip, traction and braking.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="re0044" tabindex="-1" aria-labelledby="turanzaModalLabel" aria-hidden="true" data-bs-backdrop="false">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="turanzaModalLabel">Potenza</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Bootstrap Carousel for Image Slider -->
+                            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="tyres jpeg/RE004.jpg" class="d-block w-100" alt="Potenza Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="tyres jpeg/RE 050A.jpg" class="d-block w-100" alt="Potenza Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="tyres jpeg/S001.jpg" class="d-block w-100" alt="Potenza Image 3">
+                                    </div>
+                                </div>
+                                <!-- Navigation Arrows -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 08%; align-self: center; ">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 08%; align-self: center; ">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
+            </div>
+            
         
             <!-- Techno Sports Card -->
             <div class="col">
-                <a href="passengercarradial.html" style="text-decoration: none; color: inherit;">
-                    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                        <img src="img/ts.png" class="card-img-top" alt="Techno Sports"  
-                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                        <div class="card-body d-flex flex-column align-items-center text-center" 
-                             style="display: flex; justify-content: flex-start;">
-                            <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                TECHNO SPORTS
-                            </h5>
-                            <p class="card-text" style="text-align: left;">The Bridgestone Techno Sports is a budget-friendly performance tyre designed for everyday driving with a sporty edge. Featuring an asymmetric tread pattern, large shoulder blocks, and optimized grooves, it delivers a balance of dry grip, wet traction, and durability</p>
+                <!-- Replace <a> with a div or button to trigger modal -->
+                <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+                     data-bs-toggle="modal" data-bs-target="#techno">
+                    <img src="img/ts.png" class="card-img-top" alt="Techno Sports"  
+                         style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" 
+                         style="display: flex; justify-content: flex-start;">
+                        <h5 class="card-title" 
+                            style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                            TECHNO SPORTS
+                        </h5>
+                        <p class="card-text" style="text-align: left;">The Bridgestone Techno Sports is a budget-friendly performance tyre designed for everyday driving with a sporty edge. Featuring an asymmetric tread pattern, large shoulder blocks, and optimized grooves, it delivers a balance of dry grip, wet traction, and durability</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="techno" tabindex="-1" aria-labelledby="turanzaModalLabel" aria-hidden="true" data-bs-backdrop="false">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="techno">Potenza</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Bootstrap Carousel for Image Slider -->
+                            <div id="techno" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="tyres jpeg/TECHNO.jpg" class="d-block w-100" alt="Potenza Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="tyres jpeg/tsport.jpeg" class="d-block w-100" alt="Potenza Image 2">
+                                    </div>
+                                   
+                                </div>
+                                <!-- Navigation Arrows -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#techno" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 08%; align-self: center; ">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#techno" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 08%; align-self: center; ">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
+            </div>
             </div>
         
             <!-- Turanza Card -->
             <div class="col">
-                <a href="passengercarradial.html" style="text-decoration: none; color: inherit;">
-                    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                        <img src="img/turanza.jpeg" class="card-img-top" alt="Turanza"  
-                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                        <div class="card-body d-flex flex-column align-items-center text-center" 
-                             style="display: flex; justify-content: flex-start;">
-                            <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                TURANZA
-                            </h5>
-                            <p class="card-text" style="text-align: left;">Aims to achieve the high-level balance that luxury car owners seek, combining comfort, security, driving performance, and advanced technology.</p>
+                <!-- Turanza Card -->
+                <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+                     data-bs-toggle="modal" data-bs-target="#turanzaModal">
+                    <img src="img/turanza.jpeg" class="card-img-top" alt="Turanza"  
+                         style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" 
+                         style="display: flex; justify-content: flex-start;">
+                        <h5 class="card-title" 
+                            style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                            TURANZA
+                        </h5>
+                        <p class="card-text" style="text-align: left;">Aims to achieve the high-level balance that luxury car owners seek, combining comfort, security, driving performance, and advanced technology.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Turanza Modal -->
+            <div class="modal fade" id="turanzaModal" tabindex="-1" aria-labelledby="turanzaModalLabel" aria-hidden="true" data-bs-backdrop="false">
+                <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -13px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="turanzaModalLabel">Turanza</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Bootstrap Carousel for Image Slider -->
+                            <div id="turanzaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="tyres jpeg/TURANZA ER33-01.jpg" class="d-block w-100" alt="Turanza Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="tyres jpeg/T005-01.jpg" class="d-block w-100" alt="Turanza Image 2">
+                                    </div>
+                                    
+                                </div>
+                                <!-- Navigation Arrows -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#turanzaCarousel" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#turanzaCarousel" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
+            
         
             <!-- Ecopia Card -->
             <div class="col">
-                <a href="passengercarradial.html" style="text-decoration: none; color: inherit;">
-                    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                        <img src="img/ECOPIA (1).jpg" class="card-img-top" alt="Ecopia"  
-                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                        <div class="card-body d-flex flex-column align-items-center text-center" 
-                             style="display: flex; justify-content: flex-start;">
-                            <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                ECOPIA
-                            </h5>
-                            <p class="card-text" style="text-align: left;">Provides eco-friendly performance through higher fuel efficiency and safety. It allows for reduced rolling resistance, which in turn enhances fuel efficiency.</p>
+                <!-- Ecopia Card -->
+                <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+                     data-bs-toggle="modal" data-bs-target="#ecopiaModal">
+                    <img src="img/ECOPIA (1).jpg" class="card-img-top" alt="Ecopia"  
+                         style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                    <div class="card-body d-flex flex-column align-items-center text-center" 
+                         style="display: flex; justify-content: flex-start;">
+                        <h5 class="card-title" 
+                            style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                            ECOPIA
+                        </h5>
+                        <p class="card-text" style="text-align: left;">Provides eco-friendly performance through higher fuel efficiency and safety. It allows for reduced rolling resistance, which in turn enhances fuel efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ecopia Modal -->
+            <div class="modal fade" id="ecopiaModal" tabindex="-1" aria-labelledby="turanzaModalLabel" aria-hidden="true" data-bs-backdrop="false">
+                <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px; ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ecopiaModalLabel">Ecopia</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Bootstrap Carousel for Image Slider -->
+                            <div id="ecopiaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="tyres jpeg/EP 150.jpg" class="d-block w-100" alt="Ecopia Image 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="tyres jpeg/EP 300-01.jpg" class="d-block w-100" alt="Ecopia Image 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="tyres jpeg/EP 850.jpg" class="d-block w-100" alt="Ecopia Image 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="tyres jpeg/EPHL-001.jpg" class="d-block w-100" alt="Ecopia Image 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="tyres jpeg/r156.jpeg" class="d-block w-100" alt="Ecopia Image 1">
+                                    </div>
+                                </div>
+                                <!-- Navigation Arrows (Black) -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#ecopiaCarousel" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#ecopiaCarousel" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-        </div>
+</div>
+</div>            
         <div class="container py-4">
             <!-- Heading for SUV -->
             <h4 class="mb-4 text-center" style="color: #2c3e50; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #e74c3c; padding-bottom: 5px; margin-top: 10px;">
@@ -538,149 +695,371 @@ padding: 0;
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <!-- ALENZA Card -->
                 <div class="col">
-                    <a href="light.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/ALENZA (1).jpg" class="card-img-top" alt="Alenza"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    ALENZA
-                                </h5>
-                                <p class="card-text" style="text-align: left;">The Bridgestone Alenza is a premium SUV tyre designed for comfort, durability, and all-season performance. It features optimized grooves for wet traction, reinforced shoulder blocks for stability, and a wear-resistant compound for longer life, ensuring a smooth and quiet ride</p>
+                    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+                         data-bs-toggle="modal" data-bs-target="#alenzaModal">
+                        <img src="img/ALENZA (1).jpg" class="card-img-top" alt="Alenza"  
+                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+                        <div class="card-body d-flex flex-column align-items-center text-center" 
+                             style="display: flex; justify-content: flex-start;">
+                            <h5 class="card-title" 
+                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                                ALENZA
+                            </h5>
+                            <p class="card-text" style="text-align: left;">The Bridgestone Alenza is a premium SUV tyre designed for comfort, durability, and all-season performance. It features optimized grooves for wet traction, reinforced shoulder blocks for stability, and a wear-resistant compound for longer life, ensuring a smooth and quiet ride.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ALENZA Modal -->
+                <div class="modal fade" id="alenzaModal" tabindex="-1" aria-labelledby="alenzaModalLabel" aria-hidden="true" data-bs-backdrop="false">
+                    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px; ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="alenzaModalLabel">Alenza</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Bootstrap Carousel for Image Slider -->
+                                <div id="alenzaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="tyres jpeg/ALENZA SPORTS-01.jpeg" class="d-block w-100" alt="Alenza Image 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="tyres jpeg/alenza.jpeg" class="d-block w-100" alt="Alenza Image 2">
+                                        </div>
+                                       
+                                    </div>
+                                    <!-- Navigation Arrows (Black) -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#alenzaCarousel" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#alenzaCarousel" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
         
                 <!-- DUELER Card -->
-                <div class="col">
-                    <a href="light.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/DUELER (1).jpeg" class="card-img-top" alt="Dueler"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    DUELER
-                                </h5>
-                                <p class="card-text" style="text-align: left;">Combines high-level traction and toughness that full-fledged 4WD vehicles require. It provides superior driving performance, comfort, and reliability.</p>
-                            </div>
+                <!-- DUELER Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#duelerModal">
+        <img src="img/DUELER (1).jpeg" class="card-img-top" alt="Dueler"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                DUELER
+            </h5>
+            <p class="card-text" style="text-align: left;">Combines high-level traction and toughness that full-fledged 4WD vehicles require. It provides superior driving performance, comfort, and reliability.</p>
+        </div>
+    </div>
+</div>
+
+<!-- DUELER Modal -->
+<div class="modal fade" id="duelerModal" tabindex="-1" aria-labelledby="duelerModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered"  style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="duelerModalLabel">Dueler</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="duelerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/AT001.jpg" class="d-block w-100" alt="Dueler Image 1">
                         </div>
-                    </a>
-                </div>
-        
-                <!-- ECOPIA Card -->
-                <div class="col">
-                    <a href="light.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/ecop-01-01.jpg" class="card-img-top" alt="Ecopia"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    ECOPIA
-                                </h5>
-                                <p class="card-text" style="text-align: left;">Ecopia line offers fuel-efficient tires tailored for SUVs, providing a balance of performance, comfort, and environmental benefits.</p>
-                            </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/D400.jpg" class="d-block w-100" alt="Dueler Image 2">
                         </div>
-                    </a>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/D684 II-01.jpg" class="d-block w-100" alt="Dueler Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/D684 II-01.jpg" class="d-block w-100" alt="Dueler Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/D689-01.jpg" class="d-block w-100" alt="Dueler Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/D693 III,IV,V-01.jpg" class="d-block w-100" alt="Dueler Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/D697-01.jpg" class="d-block w-100" alt="Dueler Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/D840.jpg" class="d-block w-100" alt="Dueler Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/DHPS.jpg" class="d-block w-100" alt="Dueler Image 3">
+                        </div>
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#duelerCarousel" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#duelerCarousel" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+        
+                <!-- ECOPIA Card -->
+              <!-- ECOPIA Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#ecopiaModal">
+        <img src="img/ecop-01-01.jpg" class="card-img-top" alt="Ecopia"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                ECOPIA
+            </h5>
+            <p class="card-text" style="text-align: left;">Ecopia line offers fuel-efficient tires tailored for SUVs, providing a balance of performance, comfort, and environmental benefits.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ECOPIA Modal -->
+<div class="modal fade" id="ecopiaModal" tabindex="-1" aria-labelledby="ecopiaModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ecopiaModalLabel">Ecopia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="ecopiaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/r156.jpeg" class="d-block w-100" alt="Ecopia Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/ecopia2.jpg" class="d-block w-100" alt="Ecopia Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/ecopia3.jpg" class="d-block w-100" alt="Ecopia Image 3">
+                        </div>
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#ecopiaCarousel" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#ecopiaCarousel" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
     <div class="container py-4">
         <!-- Heading for Light Commercial -->
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Duravis Card -->
-            <div class="col">
-                <a href="commercial.html" style="text-decoration: none; color: inherit;">
-                    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                        <img src="img/duravis homepage.jpg" class="card-img-top" alt="Duravis"  
-                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                        <div class="card-body d-flex flex-column align-items-center text-center" 
-                             style="display: flex; justify-content: flex-start;">
-                            <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                DURAVIS
-                            </h5>
-                            <p class="card-text" style="text-align: left;">The Bridgestone Duravis is a heavy-duty tyre built for commercial vehicles, offering durability, longevity, and fuel efficiency. Its robust tread design enhances traction and wear resistance, making it ideal for tough road conditions and high-load applications</p>
-                        </div>
-                    </div>
-                </a>
+            <!-- DURAVIS Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#duravisModal">
+        <img src="img/duravis homepage.jpg" class="card-img-top" alt="Duravis"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                DURAVIS
+            </h5>
+            <p class="card-text" style="text-align: left;">The Bridgestone Duravis is a heavy-duty tyre built for commercial vehicles, offering durability, longevity, and fuel efficiency. Its robust tread design enhances traction and wear resistance, making it ideal for tough road conditions and high-load applications.</p>
+        </div>
+    </div>
+</div>
+
+<!-- DURAVIS Modal -->
+<div class="modal fade" id="duravisModal" tabindex="-1" aria-labelledby="duravisModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="duravisModalLabel">Duravis</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="duravisCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/R624-01.jpg" class="d-block w-100" alt="Duravis Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/R660.jpg" class="d-block w-100" alt="Duravis Image 2">
+                        </div>
+                       
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#duravisCarousel" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#duravisCarousel" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
         
             <!-- LEO Card -->
-            <div class="col">
-                <a href="commercial.html" style="text-decoration: none; color: inherit;">
-                    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                        <img src="img/LEO 677 (1)-01.jpg" class="card-img-top" alt="LEO"  
-                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                        <div class="card-body d-flex flex-column align-items-center text-center" 
-                             style="display: flex; justify-content: flex-start;">
-                            <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                LEO
-                            </h5>
-                            <p class="card-text" style="text-align: left;">LEO 677 is a commercial tire designed for vehicles such as vans and pick-ups. It features a wide tread design that provides long tread life, excellent loading capacity, superior handling, and a smooth ride.</p>
-                        </div>
-                    </div>
-                </a>
+          <!-- LEO 677 Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#leoModal">
+        <img src="img/LEO 677 (1)-01.jpg" class="card-img-top" alt="LEO"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                LEO
+            </h5>
+            <p class="card-text" style="text-align: left;">LEO 677 is a commercial tire designed for vehicles such as vans and pick-ups. It features a wide tread design that provides long tread life, excellent loading capacity, superior handling, and a smooth ride.</p>
+        </div>
+    </div>
+</div>
+
+<!-- LEO 677 Modal -->
+<div class="modal fade" id="leoModal" tabindex="-1" aria-labelledby="leoModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="leoModalLabel">LEO 677</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="leoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/L677.jpg" class="d-block w-100" alt="LEO Image 1">
+                        </div>
+                      
+                       
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
         
             <!-- R623 Card -->
-            <div class="col">
-                <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                    <img src="img/r623.jpeg" class="card-img-top pattern-image"  alt="R623" 
-                         data-pattern="R625" 
-                         style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                    <div class="card-body d-flex flex-column align-items-center text-center" 
-                         style="display: flex; justify-content: flex-start;">
-                        <h5 class="card-title" 
-                            style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                            R623
-                        </h5>
-                        <p class="card-text" style="text-align: left;">R623 is a premium tire designed specifically for light commercial vehicles and vans, offering dependable performance, comfort, and safety. The compound gives enhanced control in the wet.</p>
+          <!-- R623 Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#r623Modal">
+        <img src="img/r623.jpeg" class="card-img-top" alt="R623"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                R623
+            </h5>
+            <p class="card-text" style="text-align: left;">R623 is a premium tire designed specifically for light commercial vehicles and vans, offering dependable performance, comfort, and safety. The compound gives enhanced control in the wet.</p>
+        </div>
+    </div>
+</div>
+
+<!-- R623 Modal -->
+<div class="modal fade" id="r623Modal" tabindex="-1" aria-labelledby="r623ModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="r623ModalLabel">R623</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="r623Carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/R623-01 (1).jpg" class="d-block w-100" alt="R623 Image 1">
+                        </div>
+                      
                     </div>
+                    <!-- Navigation Arrows (Black) -->
+                 
                 </div>
             </div>
-               
+        </div>
+    </div>
+</div>
 
-            <div class="modal fade" id="LOLModal" tabindex="-1" aria-labelledby="turanzaModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="tyres jpeg/R623-01 (1).jpg" alt="Turanza" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-                </div>
             
         
             <!-- R265 Card -->
-            <div class="col">
-                <a href="commercial.html" style="text-decoration: none; color: inherit;">
-                    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                        <img src="img/R265FF-01.jpg" class="card-img-top" alt="R265"  
-                             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                        <div class="card-body d-flex flex-column align-items-center text-center" 
-                             style="display: flex; justify-content: flex-start;">
-                            <h5 class="card-title" 
-                                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                R265
-                            </h5>
-                            <p class="card-text" style="text-align: left;">R265 is an all-position steel-belted radial rib tire designed for commercial light trucks and vans. Its ribbed tread pattern enhances fuel efficiency and reduces road noise, providing a quieter ride.</p>
+            <!-- R265 Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#r265Modal">
+        <img src="img/R265FF-01.jpg" class="card-img-top" alt="R265"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                R265
+            </h5>
+            <p class="card-text" style="text-align: left;">R265 is an all-position steel-belted radial rib tire designed for commercial light trucks and vans. Its ribbed tread pattern enhances fuel efficiency and reduces road noise, providing a quieter ride.</p>
+        </div>
+    </div>
+</div>
+
+<!-- R265 Modal -->
+<div class="modal fade" id="r265Modal" tabindex="-1" aria-labelledby="r265ModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="r265ModalLabel">R265</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="r265Carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/R265.jpg" class="d-block w-100" alt="R265 Image 1">
                         </div>
+                    
                     </div>
-                </a>
+                    <!-- Navigation Arrows (Black) -->
+                
+                </div>
             </div>
         </div>
+    </div>
+</div>
+</div>
+</div>
         
         <div class="container py-4">
             <!-- Heading for Truck & Bus -->
@@ -690,114 +1069,286 @@ padding: 0;
         
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <!-- R187 / R187 (SUPER) Card -->
-                <div class="col">
-                    <a href="tbr.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/r187 final-01-01-01.jpg" class="card-img-top" alt="R187"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    R187 / R187 (SUPER)
-                                </h5>
-                                <p class="card-text" style="text-align: left;">V-Steel Rib Super R187 is a commercial-grade tire designed for light and medium trucks, offering enhanced durability, traction, and comfort for highway applications.</p>
-                            </div>
+               <!-- R187 Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#r187Modal">
+        <img src="img/r187 final-01-01-01.jpg" class="card-img-top" alt="R187"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                R187 / R187 (SUPER)
+            </h5>
+            <p class="card-text" style="text-align: left;">V-Steel Rib Super R187 is a commercial-grade tire designed for light and medium trucks, offering enhanced durability, traction, and comfort for highway applications.</p>
+        </div>
+    </div>
+</div>
+
+<!-- R187 Modal -->
+<div class="modal fade" id="r187Modal" tabindex="-1" aria-labelledby="r187ModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="r187ModalLabel">R187 / R187 (SUPER)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="r187Carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/R187.jpg" class="d-block w-100" alt="R187 Image 1">
                         </div>
-                    </a>
-                </div>
-        
-                <!-- ECOPIA Card -->
-                <div class="col">
-                    <a href="tbr.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/ECOPIA final.jpg" class="card-img-top" alt="Ecopia"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    ECOPIA
-                                </h5>
-                                <p class="card-text" style="text-align: left;">ECOPIA tyres return more energy back to the tyre instead of generating heat and compromising fuel efficiency. Ecopia tyres help channel water away from the tyre through circumferential grooves.</p>
-                            </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/R187 SUPER.jpg" class="d-block w-100" alt="R187 Image 2">
                         </div>
-                    </a>
-                </div>
-        
-                <!-- G610 Card -->
-                <div class="col">
-                    <a href="tbr.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/g610-01-01-01.jpg" class="card-img-top" alt="G610"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    G610
-                                </h5>
-                                <p class="card-text" style="text-align: left;">G610 is a commercial truck tire designed for durability and performance in various applications. It is suitable for all positions on trucks, making it a versatile choice for various commercial needs.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-        
-                <!-- R294 Card -->
-                <div class="col">
-                    <a href="tbr.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/R294FF-01.jpg" class="card-img-top" alt="R294"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    R294
-                                </h5>
-                                <p class="card-text" style="text-align: left;">R294 is a highway terrain, all-season tire designed for commercial vehicles, specifically for the steer axle. Its five-rib pattern ensures even load distribution across any axle position, enhancing stability and handling.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-        
-                <!-- M857 Card -->
-                <div class="col">
-                    <a href="tbr.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/Untitled-1-01.jpg" class="card-img-top" alt="M857"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    M857
-                                </h5>
-                                <p class="card-text" style="text-align: left;">M857 is an all-position radial tire engineered for on- and off-highway applications, particularly suited for vehicles such as dump trucks, logging rigs, and refuse transporters.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-        
-                <!-- VSJ Card -->
-                <div class="col">
-                    <a href="tbr.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/VSJ (JPEG)-01-01-01.jpg" class="card-img-top" alt="VSJ"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    VSJ
-                                </h5>
-                                <p class="card-text" style="text-align: left;">V-Steel Jamal (VSJ) is a radial tire engineered for military and rescue vehicles operating on desert terrain, sand, and paved roads.</p>
-                            </div>
-                        </div>
-                    </a>
+                     
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#r187Carousel" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#r187Carousel" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+        
+                <!-- ECOPIA Card -->
+               <!-- ECOPIA Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#ecopiaModal">
+        <img src="img/ECOPIA final.jpg" class="card-img-top" alt="Ecopia"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                ECOPIA
+            </h5>
+            <p class="card-text" style="text-align: left;">ECOPIA tyres return more energy back to the tyre instead of generating heat and compromising fuel efficiency. Ecopia tyres help channel water away from the tyre through circumferential grooves.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ECOPIA Modal -->
+<div class="modal fade" id="ecopiaModal" tabindex="-1" aria-labelledby="ecopiaModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ecopiaModalLabel">ECOPIA</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="ecopiaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/ecopia-1.jpg" class="d-block w-100" alt="Ecopia Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/ecopia-2.jpg" class="d-block w-100" alt="Ecopia Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/ecopia-3.jpg" class="d-block w-100" alt="Ecopia Image 3">
+                        </div>
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#ecopiaCarousel" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#ecopiaCarousel" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+                <!-- G610 Card -->
+               <!-- G610 Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#g610Modal">
+        <img src="img/g610-01-01-01.jpg" class="card-img-top" alt="G610"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                G610
+            </h5>
+            <p class="card-text" style="text-align: left;">G610 is a commercial truck tire designed for durability and performance in various applications. It is suitable for all positions on trucks, making it a versatile choice for various commercial needs.</p>
+        </div>
+    </div>
+</div>
+
+<!-- G610 Modal -->
+<div class="modal fade" id="g610Modal" tabindex="-1" aria-labelledby="g610ModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="g610ModalLabel">G610</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="g610Carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/G610-01-01-01.jpg" class="d-block w-100" alt="G610 Image 1">
+                        </div>
+                       
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+                <!-- R294 Card -->
+              <!-- R294 Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#r294Modal">
+        <img src="img/R294FF-01.jpg" class="card-img-top" alt="R294"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                R294
+            </h5>
+            <p class="card-text" style="text-align: left;">R294 is a highway terrain, all-season tire designed for commercial vehicles, specifically for the steer axle. Its five-rib pattern ensures even load distribution across any axle position, enhancing stability and handling.</p>
+        </div>
+    </div>
+</div>
+
+<!-- R294 Modal -->
+<div class="modal fade" id="r294Modal" tabindex="-1" aria-labelledby="r294ModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="r294ModalLabel">R294</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="r294Carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/R294-01.jpg" class="d-block w-100" alt="R294 Image 1">
+                        </div>
+                      
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                   
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+                <!-- M857 Card -->
+              <!-- M857 Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#m857Modal">
+        <img src="img/Untitled-1-01.jpg" class="card-img-top" alt="M857"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                M857
+            </h5>
+            <p class="card-text" style="text-align: left;">M857 is an all-position radial tire engineered for on- and off-highway applications, particularly suited for vehicles such as dump trucks, logging rigs, and refuse transporters.</p>
+        </div>
+    </div>
+</div>
+
+<!-- M857 Modal -->
+<div class="modal fade" id="m857Modal" tabindex="-1" aria-labelledby="m857ModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="m857ModalLabel">M857</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="m857Carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/m857 (2).jpeg" class="d-block w-100" alt="M857 Image 1">
+                        </div>
+                       
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+                <!-- VSJ Card -->
+             <!-- VSJ Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#vsjModal">
+        <img src="img/VSJ (JPEG)-01-01-01.jpg" class="card-img-top" alt="VSJ"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                VSJ
+            </h5>
+            <p class="card-text" style="text-align: left;">V-Steel Jamal (VSJ) is a radial tire engineered for military and rescue vehicles operating on desert terrain, sand, and paved roads.</p>
+        </div>
+    </div>
+</div>
+
+<!-- VSJ Modal -->
+<div class="modal fade" id="vsjModal" tabindex="-1" aria-labelledby="vsjModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="vsjModalLabel">VSJ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="vsjCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/vsj.jpeg" class="d-block w-100" alt="VSJ Image 1">
+                        </div>
+                       
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
         
         <div class="container py-4">
             <!-- Heading for Industrial -->
@@ -807,66 +1358,136 @@ padding: 0;
         
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <!-- U-LUG Card -->
-                <div class="col">
-                    <a href="industrial.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/j23-01-01.jpg" class="card-img-top" alt="U-Lug"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    U-LUG
-                                </h5>
-                                <p class="card-text" style="text-align: left;">U-Lug is a durable pneumatic tyre engineered for industrial vehicles such as forklifts, trucks, and shovel loaders, its design ensures reliable performance across various surfaces.</p>
-                            </div>
+                <!-- U-LUG Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#uLugModal">
+        <img src="img/j23-01-01.jpg" class="card-img-top" alt="U-Lug"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                U-LUG
+            </h5>
+            <p class="card-text" style="text-align: left;">U-Lug is a durable pneumatic tyre engineered for industrial vehicles such as forklifts, trucks, and shovel loaders, its design ensures reliable performance across various surfaces.</p>
+        </div>
+    </div>
+</div>
+
+<!-- U-LUG Modal -->
+<div class="modal fade" id="uLugModal" tabindex="-1" aria-labelledby="uLugModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="uLugModalLabel">U-LUG</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="uLugCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/U-LUG-01.jpg" class="d-block w-100" alt="U-Lug Image 1">
                         </div>
-                    </a>
-                </div>
-        
-                <!-- J-LUG Card -->
-                <div class="col">
-                    <a href="industrial.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/J123-01.jpg" class="card-img-top" alt="J-Lug"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    J-LUG
-                                </h5>
-                                <p class="card-text" style="text-align: left;">J-Lug is a highly puncture-resistant pneumatic tyre designed for industrial applications, its robust construction enhances durability and minimizes downtime in demanding work environments.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-        
-                <!-- PL01 SOLID Card -->
-                <div class="col">
-                    <a href="industrial.html" style="text-decoration: none; color: inherit;">
-                        <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;">
-                            <img src="img/WhatsApp Image 2025-01-31 at 11.45.32 AM (1).jpg" class="card-img-top" alt="PL01 SOLID"  
-                                 style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                            <div class="card-body d-flex flex-column align-items-center text-center" 
-                                 style="display: flex; justify-content: flex-start;">
-                                <h5 class="card-title" 
-                                    style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                                    PL01 SOLID
-                                </h5>
-                                <p class="card-text" style="text-align: left;">The PL01 is entirely composed of a rubber compound, eliminating the need for air inflation and ensuring consistent performance without the risk of punctures.</p>
-                            </div>
-                        </div>
-                    </a>
+                    
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+             
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+</div>
+
+        
+                <!-- J-LUG Card -->
+              <!-- J-LUG Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#jLugModal">
+        <img src="img/J123-01.jpg" class="card-img-top" alt="J-Lug"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                J-LUG
+            </h5>
+            <p class="card-text" style="text-align: left;">J-Lug is a highly puncture-resistant pneumatic tyre designed for industrial applications, its robust construction enhances durability and minimizes downtime in demanding work environments.</p>
         </div>
     </div>
+</div>
+
+<!-- J-LUG Modal -->
+<div class="modal fade" id="jLugModal" tabindex="-1" aria-labelledby="jLugModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="jLugModalLabel">J-LUG</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="jLugCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/J-LUG-01.jpg" class="d-block w-100" alt="J-Lug Image 1">
+                        </div>
+                      
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <!-- PL01 SOLID Card -->
+               <!-- PL01 SOLID Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#pl01Modal">
+        <img src="img/WhatsApp Image 2025-01-31 at 11.45.32 AM (1).jpg" class="card-img-top" alt="PL01 SOLID"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                PL01 SOLID
+            </h5>
+            <p class="card-text" style="text-align: left;">The PL01 is entirely composed of a rubber compound, eliminating the need for air inflation and ensuring consistent performance without the risk of punctures.</p>
+        </div>
+    </div>
+</div>
+
+<!-- PL01 SOLID Modal -->
+<div class="modal fade" id="pl01Modal" tabindex="-1" aria-labelledby="pl01ModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pl01ModalLabel">PL01 SOLID</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="pl01Carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/PLO1-01.jpg" class="d-block w-100" alt="PL01 Solid Image 1">
+                        </div>
+                       
+                    </div>
+                    <!-- Navigation Arrows (Black) -->
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
  
 
-</body>
+
 
     
 
