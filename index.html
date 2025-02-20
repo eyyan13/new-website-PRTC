@@ -516,59 +516,56 @@ padding: 0;
             
         
             <!-- Techno Sports Card -->
-            <div class="col">
-                <!-- Replace <a> with a div or button to trigger modal -->
-                <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
-                     data-bs-toggle="modal" data-bs-target="#techno">
-                    <img src="img/ts.png" class="card-img-top" alt="Techno Sports"  
-                         style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
-                    <div class="card-body d-flex flex-column align-items-center text-center" 
-                         style="display: flex; justify-content: flex-start;">
-                        <h5 class="card-title" 
-                            style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
-                            TECHNO SPORTS
-                        </h5>
-                        <p class="card-text" style="text-align: left;">The Bridgestone Techno Sports is a budget-friendly performance tyre designed for everyday driving with a sporty edge. Featuring an asymmetric tread pattern, large shoulder blocks, and optimized grooves, it delivers a balance of dry grip, wet traction, and durability</p>
-                    </div>
-                </div>
+         <!-- TECHNO SPORTS Card -->
+<div class="col">
+    <div class="card h-100 overflow-hidden" style="transition: transform 0.3s; cursor: pointer;" 
+         data-bs-toggle="modal" data-bs-target="#technoModal">
+        <img src="img/ts.png" class="card-img-top" alt="Techno Sports"  
+             style="width: 100%; height: 250px; object-fit: cover; margin: auto; border: none;">
+        <div class="card-body d-flex flex-column align-items-center text-center">
+            <h5 class="card-title" 
+                style="margin-bottom: 10px; font-family: 'Poppins', sans-serif; font-weight: 600; margin-top: 10px;">
+                TECHNO SPORTS
+            </h5>
+            <p class="card-text" style="text-align: left;">The Bridgestone Techno Sports is a budget-friendly performance tyre designed for everyday driving with a sporty edge. Featuring an asymmetric tread pattern, large shoulder blocks, and optimized grooves, it delivers a balance of dry grip, wet traction, and durability.</p>
+        </div>
+    </div>
+</div>
+
+<!-- TECHNO SPORTS Modal -->
+<div class="modal fade" id="technoModal" tabindex="-1" aria-labelledby="technoModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="technoModalLabel">TECHNO SPORTS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            
-            <!-- Modal -->
-            <div class="modal fade" id="techno" tabindex="-1" aria-labelledby="turanzaModalLabel" aria-hidden="true" data-bs-backdrop="false">
-                <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="techno">Potenza</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <!-- Bootstrap Carousel for Image Slider -->
+                <div id="technoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tyres jpeg/TECHNO.jpg" class="d-block w-100" alt="Techno Sports Image 1">
                         </div>
-                        <div class="modal-body">
-                            <!-- Bootstrap Carousel for Image Slider -->
-                            <div id="techno" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="tyres jpeg/TECHNO.jpg" class="d-block w-100" alt="Potenza Image 1">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="tyres jpeg/tsport.jpeg" class="d-block w-100" alt="Potenza Image 2">
-                                    </div>
-                                   
-                                </div>
-                                <!-- Navigation Arrows -->
-                                <button class="carousel-control-prev" type="button" data-bs-target="#techno" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 08%; align-self: center; ">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#techno" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 08%; align-self: center; ">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
+                        <div class="carousel-item">
+                            <img src="tyres jpeg/tsport.jpeg" class="d-block w-100" alt="Techno Sports Image 2">
                         </div>
                     </div>
+                    <!-- Navigation Arrows (Black) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#technoCarousel" data-bs-slide="prev" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#technoCarousel" data-bs-slide="next" style="background-color: #000000; height: 10%; width: 8%; align-self: center;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-            </div>
+        </div>
+    </div>
+</div>
+
         
             <!-- Turanza Card -->
             <div class="col">
@@ -1036,7 +1033,7 @@ padding: 0;
 
 <!-- R265 Modal -->
 <div class="modal fade" id="r265Modal" tabindex="-1" aria-labelledby="r265ModalLabel" aria-hidden="true" data-bs-backdrop="false">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="r265ModalLabel">R265</h5>
