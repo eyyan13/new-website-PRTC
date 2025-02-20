@@ -39,7 +39,23 @@
 
 
     <style>
+        
+
+
  /* Full-screen modal styling */
+ #r623Modal .modal-dialog {
+    max-width: 35%; /* Modal ka width zyada karna */
+}
+
+#r623Modal .modal-content {
+    overflow: hidden; /* Extra overflow remove karna */
+}
+
+#r623Modal .modal-body {
+    max-height: 25%; /* Modal body ki height limit karna */
+    overflow-y: hidden; /* Scroll enable karna agar zaroori ho */
+}
+
 .modal {
     display: none; /* Modal ko default hide rakhein */
     position: fixed;
@@ -58,22 +74,18 @@
 .modal-content {
   
     background-color: white;
-    padding: 20px;
+ margin-top: 60px;
     border-radius: 10px;
     max-width: 90%;
     max-height: 40%;
- 
+
     animation: slideIn 0.5s ease-in-out; /* Smooth slide-in animation */
 }
 /* === Default Modal Centering === */
 
 
 /* === Fix Modal Overflow & Ensure Responsiveness === */
-.modal-content {
-    max-height: 90vh; /* Ensures modal doesn't overflow vertically */
-    overflow-y: auto; /* Enables scrolling inside modal */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-}
+
 
 /* === Extra Small Devices (iPhone X, etc.) === */
 @media (max-width: 480px) {
@@ -81,7 +93,7 @@
         max-width: 95%; /* Ensures proper width */
     }
     .modal-content {
-        max-height: 85vh; /* Adjusts height for smaller screens */
+        max-height: 95vh; /* Adjusts height for smaller screens */
     }
 }
 
@@ -99,7 +111,7 @@
 /* Close button styling */
 .close-modal {
     position: absolute;
-    top: 20px;
+    top: 5px;
     right: 20px;
     font-size: 30px;
     color: white;
@@ -1019,7 +1031,7 @@ padding: 0;
                 <div id="r623Carousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="tyres jpeg/R623-01 (1).jpg" class="d-block w-100" alt="R623 Image 1">
+                            <img src="tyres jpeg/R623-01 (1).jpg" class="d-block w-100 zoom-cursor" alt="R623 Image 1">
                         </div>
                       
                     </div>

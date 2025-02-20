@@ -180,3 +180,5 @@ function toggleDetails(button) {
     });
     
     
+    
+    
