@@ -62,8 +62,27 @@
     border-radius: 10px;
     max-width: 90%;
     max-height: 40%;
-  margin-bottom: -30px;
+ 
     animation: slideIn 0.5s ease-in-out; /* Smooth slide-in animation */
+}
+/* === Default Modal Centering === */
+
+
+/* === Fix Modal Overflow & Ensure Responsiveness === */
+.modal-content {
+    max-height: 90vh; /* Ensures modal doesn't overflow vertically */
+    overflow-y: auto; /* Enables scrolling inside modal */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* === Extra Small Devices (iPhone X, etc.) === */
+@media (max-width: 480px) {
+    .modal-dialog {
+        max-width: 95%; /* Ensures proper width */
+    }
+    .modal-content {
+        max-height: 85vh; /* Adjusts height for smaller screens */
+    }
 }
 
 /* Animations */
@@ -385,7 +404,7 @@ padding: 0;
     
     
     <!-- Carousel Start -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -534,7 +553,7 @@ padding: 0;
 
 <!-- TECHNO SPORTS Modal -->
 <div class="modal fade" id="technoModal" tabindex="-1" aria-labelledby="technoModalLabel" aria-hidden="true" data-bs-backdrop="false">
-    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; margin-top: -8px;">
+    <div class="modal-dialog modal-dialog-centered" style="overflow: hidden; ">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="technoModalLabel">TECHNO SPORTS</h5>
