@@ -225,7 +225,14 @@ text-align: center;
     transform: scale(1.03);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+  .gallery-item {
+            display: none;
+        }
 
+        /* Show only Head Office images by default */
+        .gallery-item.tyres {
+            display: block;
+        }
 .gallery-item-wrapper:hover img {
     transform: scale(1.1);
 }
@@ -306,245 +313,201 @@ h4 {
             </div>
         </div>
     </nav>
-   
+
+
     <!-- Gallery Section -->
     <div class="seven">
-        <h1 style="margin-top: 30px; font-family: Arial, Helvetica, sans-serif;" >Gallery</h1>
-    
-      
+        <h1 style="margin-top: 30px; font-family: Arial, Helvetica, sans-serif;">Gallery</h1>
+    </div>
     <div class="gallery-section">
-      <div class="container">
-          
-          <div class="gallery-filters text-center mb-4">
-              <div class="row justify-content-center">
-                  
-                  <div class="col-auto mb-2">
-                      <button class="btn btn-outline-danger" data-filter=".tyres">Head Office (Karachi)</button>
-                  </div>
-                  <div class="col-auto mb-2">
-                      <button class="btn btn-outline-danger" data-filter=".rubber">Regional Office (Lahore)</button>
-                  </div>
-                  <div class="col-auto mb-2">
-                      <button class="btn btn-outline-danger" data-filter=".accessories">Flagship Outlet (Lahore)</button>
-                  </div>
-              </div>
-          </div>
-  
-          <!-- Gallery Grid -->
-          <div class="row gallery-items">
-            <!-- First Row -->
-            <div class="col-lg-4 col-md-6 gallery-item tyres">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/1.jpg" alt="Tyres" class="w-100">
-  
+        <div class="container">
+            <!-- Gallery Filters -->
+            <div class="gallery-filters text-center mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-auto mb-2">
+                        <button class="btn btn-outline-danger active" data-filter=".tyres">Head Office (Karachi)</button>
+                    </div>
+                    <div class="col-auto mb-2">
+                        <button class="btn btn-outline-danger" data-filter=".rubber">Regional Office (Lahore)</button>
+                    </div>
+                    <div class="col-auto mb-2">
+                        <button class="btn btn-outline-danger" data-filter=".accessories">Flagship Outlet (Lahore)</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 gallery-item tyres">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/2.jpg" alt="Rubber" class="w-100">
-  
-                </div>
-            </div>
-           
-        
-          <div class="col-lg-4 col-md-6 gallery-item tyres">
-              <div class="position-relative gallery-item-wrapper">
-                  <img src="img/faisal town imgs/11.jpg" alt="Accessories" class="w-100">
-  
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6 gallery-item tyres">
-            <div class="position-relative gallery-item-wrapper">
-                <img src="img/faisal town imgs/3.jpg" alt="Accessories" class="w-100">
 
-            </div>
-            </div>
-            <!-- Second Row -->
-            <div class="col-lg-4 col-md-6 gallery-item tyres">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/4.jpg" alt="Tyres" class="w-100">
-  
+            <!-- Gallery Grid -->
+            <div class="row gallery-items">
+                <!-- Head Office Images -->
+                <div style="text-align: center;">
+                    <div class="col-lg-4 col-md-6 gallery-item tyres">
+                        <div class="position-relative gallery-item-wrapper">
+                            <img src="img/faisal town imgs/G5.jpg" alt="Tyres" class="w-100" style="display: inline-block;">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item tyres">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/5.jpg" alt="Rubber" class="w-100" style="object-fit: cover;">
-  
-                </div>
-            </div>
                 
-            <div class="col-lg-4 col-md-6 gallery-item tyres">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/9.jpg" alt="Accessories" class="w-100">
-  
+                <div class="col-lg-4 col-md-6 gallery-item tyres">
+                    <div class="position-relative gallery-item-wrapper">
+                        <img src="img/faisal town imgs/9.jpg" alt="Accessories" class="w-100">
+      
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item tyres">
-              <div class="position-relative gallery-item-wrapper">
-                  <img src="img/faisal town imgs/10.jpg" alt="Accessories" class="w-100">
-  
-              </div>
-          </div>
-            <div class="col-lg-4 col-md-6 gallery-item tyres">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/6.jpg" alt="Accessories" class="w-100">
-  
+                <div class="col-lg-4 col-md-6 gallery-item tyres">
+                    <div class="position-relative gallery-item-wrapper">
+                        <img src="img/faisal town imgs/G7.jpg" alt="Tyres" class="w-100">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item tyres">
-              <div class="position-relative gallery-item-wrapper">
-                  <img src="img/faisal town imgs/7.jpg" alt="Accessories" class="w-100">
-
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6 gallery-item tyres">
-              <div class="position-relative gallery-item-wrapper">
-                  <img src="img/faisal town imgs/8.jpg" alt="Accessories" class="w-100">
-
-              </div>
-          </div>
-          
-        <div class="col-lg-4 col-md-6 gallery-item tyres">
-            <div class="position-relative gallery-item-wrapper">
-                <img src="img/faisal town imgs/12.jpg" alt="Accessories" class="w-100">
-
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 gallery-item tyres">
-            <div class="position-relative gallery-item-wrapper">
-                <img src="img/faisal town imgs/13.jpg" alt="Accessories" class="w-100">
-
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 gallery-item tyres">
-            <div class="position-relative gallery-item-wrapper">
-                <img src="img/faisal town imgs/14.jpg" alt="Accessories" class="w-100">
-
-            </div>
-        </div>
-
-
-          <div class="row gallery-items">
-              <!-- First Row -->
-              <div class="col-lg-4 col-md-6 gallery-item accessories">
-                  <div class="position-relative gallery-item-wrapper">
-                      <img src="img/faisal town imgs/main.jpeg" alt="Tyres" class="w-100">
-    
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 gallery-item accessories">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/f8.jpg" alt="Accessories" class="w-100">
-  
+                <div class="col-lg-4 col-md-6 gallery-item tyres">
+                    <div class="position-relative gallery-item-wrapper">
+                        <img src="img/faisal town imgs/737.jpg" alt="Rubber" class="w-100">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item accessories">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/f9.jpg" alt="Accessories" class="w-100">
-  
+                <div class="col-lg-4 col-md-6 gallery-item tyres">
+                    <div class="position-relative gallery-item-wrapper">
+                        <img src="img/faisal town imgs/G6.jpg" alt="Rubber" class="w-100">
+                    </div>
                 </div>
-            </div>
-              <div class="col-lg-4 col-md-6 gallery-item accessories">
-                  <div class="position-relative gallery-item-wrapper">
-                      <img src="img/faisal town imgs/IMG_5988.JPG" alt="Rubber" class="w-100">
-    
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 gallery-item accessories">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/f6.jpg" alt="Accessories" class="w-100">
-  
+                <div class="col-lg-4 col-md-6 gallery-item tyres">
+                    <div class="position-relative gallery-item-wrapper">
+                        <img src="img/faisal town imgs/G10.jpg" alt="Rubber" class="w-100">
+                    </div>
+                </div> 
+                <div class="col-lg-4 col-md-6 gallery-item tyres">
+                    <div class="position-relative gallery-item-wrapper">
+                        <img src="img/faisal town imgs/staff.jpg" alt="Tyres" class="w-100">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item accessories">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/f7.jpg" alt="Accessories" class="w-100">
-  
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item accessories">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/f2.jpg" alt="Accessories" class="w-100">
-  
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item accessories">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/f4.jpg" alt="Accessories" class="w-100">
-  
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item accessories">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/f5.jpg" alt="Accessories" class="w-100">
-  
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item accessories">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/f1.jpg" alt="Accessories" class="w-100">
-  
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item accessories">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/f3.jpg" alt="Accessories" class="w-100">
-  
-                </div>
-            </div>
-              <div class="col-lg-4 col-md-6 gallery-item accessories">
-                  <div class="position-relative gallery-item-wrapper">
-                      <img src="img/faisal town imgs/IMG_5993.JPG" alt="Accessories" class="w-100">
-    
-                  </div>
-              </div>
-  
-              <!-- Second Row -->
-            
-            
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item rubber">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/reg1.jpeg" alt="Accessories" class="w-100">
-
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item rubber">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/reg2 (2).jpeg" alt="Accessories" class="w-100">
-
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 gallery-item rubber">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/reg1 (2).jpeg" alt="Accessories" class="w-100">
-
-                </div>
-                </div>
-            <div class="col-lg-4 col-md-6 gallery-item rubber" style="margin-bottom: 180px;">
-                <div class="position-relative gallery-item-wrapper">
-                    <img src="img/faisal town imgs/reg3 (2).jpeg" alt="Accessories" class="w-100">
-
-                </div>
-            </div>
-         
+              
+             
+               
+              
            
+              
+           
+                    
+                 
+                        
+<!--                     
+                    <div class="col-lg-4 col-md-6 gallery-item tyres">
+                      <div class="position-relative gallery-item-wrapper">
+                          <img src="img/faisal town imgs/10.jpg" alt="Accessories" class="w-100">
           
+                      </div>
+                  </div>
+                 -->
+                    
+                  
             
+               
+        
+        
+                  <div class="row gallery-items">
+                      <!-- First Row -->
+                      <div class="col-lg-4 col-md-6 gallery-item accessories">
+                          <div class="position-relative gallery-item-wrapper">
+                              <img src="img/faisal town imgs/main.jpeg" alt="Tyres" class="w-100">
+            
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 gallery-item accessories">
+                        <div class="position-relative gallery-item-wrapper">
+                            <img src="img/faisal town imgs/f8.jpg" alt="Accessories" class="w-100">
+          
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 gallery-item accessories">
+                        <div class="position-relative gallery-item-wrapper">
+                            <img src="img/faisal town imgs/f9.jpg" alt="Accessories" class="w-100">
+          
+                        </div>
+                    </div>
+                      <div class="col-lg-4 col-md-6 gallery-item accessories">
+                          <div class="position-relative gallery-item-wrapper">
+                              <img src="img/faisal town imgs/IMG_5988.JPG" alt="Rubber" class="w-100">
+            
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 gallery-item accessories">
+                        <div class="position-relative gallery-item-wrapper">
+                            <img src="img/faisal town imgs/f6.jpg" alt="Accessories" class="w-100">
+          
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 gallery-item accessories">
+                        <div class="position-relative gallery-item-wrapper">
+                            <img src="img/faisal town imgs/f7.jpg" alt="Accessories" class="w-100">
+          
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 gallery-item accessories">
+                        <div class="position-relative gallery-item-wrapper">
+                            <img src="img/faisal town imgs/f2.jpg" alt="Accessories" class="w-100">
+          
+                        </div>
+                    </div>
+                  
+                    <div class="col-lg-4 col-md-6 gallery-item accessories">
+                        <div class="position-relative gallery-item-wrapper">
+                            <img src="img/faisal town imgs/f5.jpg" alt="Accessories" class="w-100">
+          
+                        </div>
+                    </div>
+                   
+                      <div class="col-lg-4 col-md-6 gallery-item accessories">
+                          <div class="position-relative gallery-item-wrapper">
+                              <img src="img/faisal town imgs/IMG_5993.JPG" alt="Accessories" class="w-100">
+            
+                          </div>
+                      </div>
+          
+                      <!-- Second Row -->
+                    
+                    
+                    </div>
+                    <div class="col-lg-4 col-md-6 gallery-item rubber">
+                        <div class="position-relative gallery-item-wrapper">
+                            <img src="img/faisal town imgs/reg1.jpeg" alt="Accessories" class="w-100">
+        
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 gallery-item rubber">
+                        <div class="position-relative gallery-item-wrapper">
+                            <img src="img/faisal town imgs/reg2 (2).jpeg" alt="Accessories" class="w-100">
+        
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item rubber" style="margin-bottom: 180px;">
+                        <div class="position-relative gallery-item-wrapper">
+                            <img src="img/faisal town imgs/reg3 (2).jpeg" alt="Accessories" class="w-100">
+        
+                        </div>
+                    </div>
+                 
+                   
+                  
+                    
+                  </div>
+              </div>
           </div>
-      </div>
-  </div>
-  </div>
-    <!-- Bootstrap and Script -->
-   
-  
-    
+          </div>
+                <!-- Add more Head Office images here -->
 
-    <!-- Footer Start -->
+                <!-- Regional Office Images -->
+                
+                <!-- Add more Flagship Outlet images here -->
+         
+    
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+     
     <div class="container-fluid bg-dark text-light footer pt-1 mt-5 no-padding wow fadeIn" data-wow-delay="0.1s"> <!-- Added no-padding -->
         <div class="container py-5 no-padding"> <!-- Added no-padding -->
             <div class="col-12 text-center">
-                <img src="img/PRTC.png" alt="logo" style="width: 25rem; margin-top: -90px;">
+                <img class="source" src="img/PRTC.png" alt="logo" style="width: 25rem; margin-top: -90px;">
             </div>
             <div class="row g-5">
                 <div class="row mt-4">
@@ -713,56 +676,95 @@ h4 {
             </div>
         </div>
     </div>
-
+    
+  
+  
+  
+    <!-- Footer End -->
+    <!-- Footer End -->
+  
 
     <!-- Back to Top -->
+    
     <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> -->
 
+
+  
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+   
+
+        <!-- Your existing footer content -->
+    </div>
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
-    
-  $(document).ready(function () {
-      // Filter gallery items
-      $('.gallery-filters button').click(function () {
-          const filter = $(this).data('filter');
-          $('.gallery-filters button').removeClass('active'); // Remove active class from all buttons
-          $(this).addClass('active'); // Add active class to the clicked button
-          
-          if (filter === '*') {
-              $('.gallery-item').show();
-          } else {
-              $('.gallery-item').hide();
-              $(filter).show();
-          }
-      });
+        $(document).ready(function () {
+            // Activate the "Head Office" filter by default
+            $('.gallery-filters button[data-filter=".tyres"]').addClass('active');
 
-      // Open modal on image click
-      $('.gallery-item img').click(function () {
-          const src = $(this).attr('src'); // Get the clicked image's src
-          $('#modalImage').attr('src', src); // Set modal image src
-          $('#galleryModal').modal('show'); // Show the modal
-      });
-  });
+            // Filter gallery items
+            $('.gallery-filters button').click(function () {
+                const filter = $(this).data('filter');
+                $('.gallery-filters button').removeClass('active'); // Remove active class from all buttons
+                $(this).addClass('active'); // Add active class to the clicked button
 
-
-  </script>
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-   
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
+                if (filter === '*') {
+                    $('.gallery-item').show();
+                } else {
+                    $('.gallery-item').hide(); // Hide all gallery items
+                    $(filter).show(); // Show only the filtered items
+                }
+            });
+        });
+    </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script>
+      
+    $(document).ready(function () {
+        // Filter gallery items
+        $('.gallery-filters button').click(function () {
+            const filter = $(this).data('filter');
+            $('.gallery-filters button').removeClass('active'); // Remove active class from all buttons
+            $(this).addClass('active'); // Add active class to the clicked button
+            
+            if (filter === '*') {
+                $('.gallery-item').show();
+            } else {
+                $('.gallery-item').hide();
+                $(filter).show();
+            }
+        });
   
-   
-
+        // Open modal on image click
+        $('.gallery-item img').click(function () {
+            const src = $(this).attr('src'); // Get the clicked image's src
+            $('#modalImage').attr('src', src); // Set modal image src
+            $('#galleryModal').modal('show'); // Show the modal
+        });
+    });
+  
+  
+    </script>
+      <!-- JavaScript Libraries -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/wow/wow.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/counterup/counterup.min.js"></script>
+     
+      <script src="lib/tempusdominus/js/moment.min.js"></script>
+      <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+      <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  
+      <!-- Template Javascript -->
+    
+  
 </body>
 
 </html>
